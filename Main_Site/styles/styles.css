@@ -1,0 +1,151 @@
+@import 'obnulenie.css';
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;900&family=Roboto&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Jost:wght@400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Rubik:wght@800;900&display=swap");
+body {
+  background-color: #1E1E1E;
+  min-height: 100%;
+}
+
+[class*=header-link] {
+  color: #FFFFFF;
+  font-family: "Montserrat";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+[class*=header-link]:hover {
+  color: #ADFF00;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+[class*=_titleH1-white] {
+  color: #FFF;
+  -webkit-font-feature-settings: "case" on, "liga" off;
+          font-feature-settings: "case" on, "liga" off;
+  text-shadow: 0px -10px 50px rgba(255, 255, 255, 0.15);
+  font-family: "Rubik";
+  font-size: 180px;
+  font-style: normal;
+  font-weight: 900;
+  line-height: normal;
+  text-transform: uppercase;
+  z-index: 2;
+  margin-top: 290px;
+}
+
+[class*=_titleH1-green] {
+  -webkit-font-feature-settings: "case" on, "liga" off;
+          font-feature-settings: "case" on, "liga" off;
+  text-shadow: 0px 0px 75px rgba(204, 255, 0, 0.15);
+  font-family: "Rubik";
+  font-size: 180px;
+  font-style: normal;
+  font-weight: 900;
+  line-height: normal;
+  text-transform: uppercase;
+  color: #1E1E1E;
+  -webkit-text-stroke: #ADFF00 3px;
+  z-index: -1;
+  margin-bottom: -105px;
+}
+
+.header {
+  width: 100%;
+}
+
+.header-container {
+  max-width: 1400px;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 30px 0;
+}
+
+.header__MainMenu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.header__MainMenu_link {
+  margin-right: 60px;
+}
+.header__MainMenu_link:last-child {
+  margin-right: 0;
+}
+
+.header__SecondMenu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.header__SecondMenu_link:first-child::after {
+  content: "/";
+  margin: 0 30px;
+  color: #ADFF00;
+}
+
+.sectionOne {
+  width: 100%;
+}
+
+.sectionOne-container {
+  max-width: 1400px;
+  margin: 0 auto;
+  height: 85vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.sectionOne__information {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  position: relative;
+}
+
+.sectionOne__information_img {
+  position: absolute;
+  z-index: 1;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
