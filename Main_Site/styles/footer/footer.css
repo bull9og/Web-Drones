@@ -1,0 +1,115 @@
+.footer {
+  max-width: 100%;
+  margin-top: 310px;
+}
+
+.footer-container {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding-bottom: 110px;
+  padding-top: 60px;
+  border-top: 1px solid #363636;
+}
+
+.footer__information_titleH4 {
+  margin-bottom: 55px;
+}
+
+.footer__information_subTitle {
+  color: #FFF;
+  font-family: Montserrat;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: normal;
+  text-transform: uppercase;
+  width: 476px;
+  margin-bottom: 15px;
+}
+
+.footer__information_number {
+  color: #858585;
+  font-family: Montserrat;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: normal;
+  text-decoration-line: underline;
+  margin-bottom: 10px;
+}
+
+.footer__information_geolocation {
+  color: #858585;
+  font-family: Montserrat;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: normal;
+  text-decoration-line: underline;
+  margin-bottom: 45px;
+}
+
+.footer__information_crovex {
+  color: #ADFF00;
+  font-family: Montserrat;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.footer__menuAndSoc {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.footer__menuAndSoc_menu {
+  margin-right: 220px;
+}
+
+.footer__menuAndSoc_menu_titleH4 {
+  margin-bottom: 55px;
+}
+
+.menu_link {
+  margin-bottom: 35px;
+}
+.menu_link:last-child {
+  margin-bottom: 0;
+}
+.menu_link a {
+  color: #FFF;
+  font-family: Montserrat;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: normal;
+  -webkit-transition: 500ms;
+  transition: 500ms;
+}
+.menu_link a:hover {
+  color: #ADFF00;
+}
+
+.footer__menuAndSoc_soc_titleH4 {
+  margin-bottom: 55px;
+}
+
+.soc_link {
+  margin-bottom: 35px;
+}
+.soc_link:last-child {
+  margin-bottom: 0;
+}
+.soc_link a {
+  color: #FFF;
+  font-family: Montserrat;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: normal;
+  -webkit-transition: 500ms;
+  transition: 500ms;
+}
+.soc_link a:hover {
+  color: #ADFF00;
+}

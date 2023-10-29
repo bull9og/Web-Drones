@@ -1,0 +1,96 @@
+body {
+  background-color: #1E1E1E;
+  min-height: 100%;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+
+[class*=-container] {
+  max-width: 1400px;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+[class*=header-link] {
+  color: #FFFFFF;
+  font-family: "Montserrat";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+[class*=header-link]:hover {
+  color: #ADFF00;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+[class*=_titleH1-white] {
+  color: #FFF;
+  text-shadow: 0px -10px 50px rgba(255, 255, 255, 0.15);
+  font-family: "Rubik";
+  font-size: 180px;
+  font-style: normal;
+  font-weight: 900;
+  line-height: normal;
+  text-transform: uppercase;
+  z-index: 2;
+  margin-top: -170px;
+}
+
+[class*=_titleH1-green] {
+  text-shadow: 0px 0px 75px rgba(204, 255, 0, 0.15);
+  font-family: "Rubik";
+  font-size: 180px;
+  font-style: normal;
+  font-weight: 900;
+  line-height: normal;
+  text-transform: uppercase;
+  color: #1E1E1E;
+  -webkit-text-stroke: #ADFF00 3px;
+  z-index: -1;
+  margin-bottom: -220px;
+}
+
+[class*=_titleH4] {
+  color: #FFF;
+  font-family: "Montserrat";
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  text-transform: uppercase;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+[class*=_titleH4] div {
+  width: 10px;
+  height: 10px;
+  border-radius: 100%;
+  background: #ADFF00;
+  margin-right: 15px;
+}
+
+[class*=_titleH2] {
+  font-family: "Rubik";
+  font-size: 70px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: 8.4px;
+  text-transform: uppercase;
+  color: transparent;
+  -webkit-text-stroke: #FFF 1.5px;
+  -webkit-transition: 600ms;
+  transition: 600ms;
+}

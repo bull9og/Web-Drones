@@ -1,0 +1,102 @@
+.footer {
+    max-width: 100%;
+	margin-top: 310px;
+}
+.footer-container {
+    align-items: center;
+	justify-content: space-between;
+	padding-bottom: 110px;
+	padding-top: 60px;
+	border-top: 1px solid #363636;
+}
+.footer__information {
+}
+.footer__information_titleH4 {
+    margin-bottom: 55px;
+}
+.footer__information_subTitle {
+    color: #FFF;
+    font-family: Montserrat;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: normal;
+    text-transform: uppercase;
+    width: 476px;
+    margin-bottom: 15px;
+}
+.footer__information_number {
+    color: #858585;
+    font-family: Montserrat;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: normal;
+    text-decoration-line: underline;
+    margin-bottom: 10px;
+}
+.footer__information_geolocation {
+    color: #858585;
+    font-family: Montserrat;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: normal;
+    text-decoration-line: underline;
+    margin-bottom: 45px;
+}
+.footer__information_crovex {
+    color: #ADFF00;
+    font-family: Montserrat;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: normal;
+}
+.footer__menuAndSoc {
+    display: flex;
+   
+}
+.footer__menuAndSoc_menu {
+ margin-right: 220px;
+}
+.footer__menuAndSoc_menu_titleH4 {
+    margin-bottom: 55px;
+}
+.footer__menuAndSoc_menu_list {
+}
+.menu_link {
+    margin-bottom: 35px;
+    &:last-child {
+        margin-bottom: 0;
+    }
+    a {
+        color: #FFF;
+        font-family: Montserrat;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: normal;
+        transition: 500ms;
+        &:hover {
+            color: #ADFF00;
+        }
+    }
+}
+.footer__menuAndSoc_soc_titleH4 {
+    margin-bottom: 55px;
+}
+.footer__menuAndSoc_soc_list {
+}
+.soc_link {
+    margin-bottom: 35px;
+    &:last-child {
+        margin-bottom: 0;
+    }
+    a {
+        color: #FFF;
+        font-family: Montserrat;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: normal;
+        transition: 500ms;
+        &:hover {
+            color: #ADFF00;
+        }
+    }
+}

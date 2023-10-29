@@ -1,0 +1,201 @@
+//? ----------------- IMPORT START ----------------- ?//
+@import '../obnulenie.css';
+@import '../global_style_CSS/globalStyle.css';
+@import '../header/header.css';
+@import '../footer/footer.css';
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;900&family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Jost:wght@400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@800;900&display=swap');
+//? ----------------- IMPORT END ----------------- ?//
+
+
+
+//* ----------------- SECTION_ONE-CSS START ----------------- *//
+.sectionOne {
+	width: 100%;
+}
+.sectionOne-container {
+	height: 85vh;
+	align-items: center;
+	justify-content: center;
+}
+.sectionOne__information {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	position: relative;
+}
+.sectionOne__information_img {
+}
+//* ----------------- SECTION_ONE-CSS END ----------------- *//
+
+
+
+//* ----------------- SECTION_TWO-CSS START ----------------- *//
+.sectionTwo {
+	max-width: 100%;
+	margin-top: 193px;
+}
+.sectionTwo__runStrokeContainer {
+	border-top: 1px solid #363636;
+	border-bottom: 1px solid #363636;
+	padding: 40px 0;
+}
+.sectionTwo__runStroke {
+	display: flex;
+	justify-content: right;
+	ul {
+		display: flex;
+		align-items: center;
+		li {
+			color: #FFF;
+			font-family: 'Montserrat';
+			font-size: 16px;
+			font-weight: 700;
+			line-height: normal;
+			text-transform: uppercase;
+			&::after {
+				content: '/';
+				color: #ADFF00;
+				font-family: 'Montserrat';
+				margin: 0 100px;
+			}
+		}
+	}
+}
+//* ----------------- SECTION_TWO-CSS END ----------------- *//
+
+
+
+//* ----------------- SECTION_THREE-CSS START ----------------- *//
+.sectionThree {
+	max-width: 100%;
+	margin-top: 200px;
+}
+.sectionThree__container {
+	max-width: 1400px;
+	margin: 0 auto;
+	background-color: #1E1E1E;
+}
+.sectionThree_text {
+	color: #363636;
+	font-family: 'Montserrat';
+	font-size: 35px;
+	font-weight: 600;
+	line-height: normal;
+	transition: color 0.5s ease; 
+}
+//* ----------------- SECTION_THREE-CSS END ----------------- *//
+
+
+
+//* ----------------- SECTION_FOUR-CSS START ----------------- *//
+.sectionFour {
+	width: 100%;
+	margin-top: 400px;
+}
+.sectionFour-container {
+	flex-direction: column;
+	overflow: hidden;
+}
+.sectionFour__titleContainer {
+}
+.sectionFour__titleContainer_h4 {
+}
+.sectionFour__featuresItems {
+}
+.sectionFour__featuresItems_item {
+	padding: 100px 0 30px 0;
+	&:hover {
+		h2 {
+			color: #FFF;
+			-webkit-text-stroke: none;
+			transition: 600ms;
+		}
+	}
+	p {
+		color: rgba(173, 255, 0, 0.80);
+		font-family: 'Montserrat';
+		font-size: 16px;
+		font-style: normal;
+		font-weight: 400;
+		line-height: normal;
+		margin-top: 59px;
+		display: flex;
+		justify-content: end;
+	}
+}
+.sectionFour__featuresItems_item_titleH2 {
+}
+//* ----------------- SECTION_FOUR-CSS END ----------------- *//
+
+
+
+//* ----------------- SECTION_FIVE-CSS START ----------------- *//
+.sectionFive {
+	max-width: 100%;
+	margin-top: 200px;
+}
+.sectionFive-container {
+	
+	flex-direction: column;
+	max-width: 1400px;
+	margin: 0 auto;
+}
+.sectionFive__title {
+	color: #FFF;
+	text-align: center;
+	font-feature-settings: 'case' on, 'liga' off;
+	text-shadow: 0px -10px 50px rgba(255, 255, 255, 0.15);
+	font-family: 'Rubik';
+	font-size: 96px;
+	font-weight: 400;
+	line-height: normal;
+	text-transform: uppercase;
+	span {
+		color: #1E1E1E;
+		text-shadow: 0px 0px 75px rgba(204, 255, 0, 0.20);
+		font-family: 'Rubik';
+		font-size: 96px;
+		font-weight: 400;
+		line-height: normal;
+		text-transform: uppercase;
+		-webkit-text-stroke: #ADFF00 2px;
+	}
+}
+.sectionFive__link {
+	margin-top: 200px;
+	display: flex;
+	justify-content: center;
+}
+.sectionFive__link_imgs {
+	position: relative;
+	svg {
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%,-50%);
+		&:nth-child(2) {
+			top: -71px;
+			left: -72px;
+			animation: 7s linear 0s normal none infinite running svg;
+			@keyframes svg {
+			0% {
+				transform: rotate(0deg);
+			}
+			100% {
+				transform: rotate(360deg);
+			}
+			}  
+		}
+	}
+}
+//* ----------------- SECTION_FIVE-CSS END ----------------- *//
+
+
+
+
+
+
+
