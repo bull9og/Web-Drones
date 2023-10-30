@@ -3,6 +3,11 @@ body {
 	background-color: #1E1E1E;
 	min-height: 100%;
 	user-select: none; //?запрет на копирование
+	display: flex;
+	flex-direction: column;
+}
+main {
+	flex: 1 1 auto;
 }
 [class*='-container'] {
 	max-width: 1400px;
@@ -76,5 +81,25 @@ body {
 	color: transparent;
 	-webkit-text-stroke: #FFF 1.5px;
 	transition: 600ms;
+}
+[class*='_titleH3'] {
+	color: #858585;
+	font-family: 'Montserrat';
+	font-size: 36px;
+	font-style: normal;
+	font-weight: 700;
+	line-height: normal;
+	text-transform: uppercase;
+}
+[class*='_description'] {
+	color: #FFF;
+	font-family: 'Montserrat';
+	font-size: 16px;
+	font-style: normal;
+	font-weight: 400;
+	line-height: normal;
+	span {
+		font-weight: 600;
+	}
 }
 //! ----------------- GLOBAL-CSS END ----------------- !//
