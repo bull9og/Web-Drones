@@ -28,6 +28,41 @@
 }
 .sectionOne__information_img {
 	padding: 120px 0;
+	animation: img 2s ease-out;
+	@keyframes img {
+		from {
+			opacity: 0%;
+		}
+		to {
+			opacity: 100%;
+		}
+	}
+}
+.sectionOne__information_titleH1-green {
+	animation: titleGreen 1.3s ease-out;
+	@keyframes titleGreen {
+		from {
+			transform: translateY(-450px);
+			opacity: 0%;
+		}
+		to {
+			transform: translateY(0px);
+			opacity: 100%;
+		}
+	}
+}
+.sectionOne__information_titleH1-white {
+	animation: titleWhite 1.3s ease-out;
+	@keyframes titleWhite {
+		from {
+			transform: translateY(450px);
+			opacity: 0%;
+		}
+		to {
+			transform: translateY(0px);
+			opacity: 100%;
+		}
+	}
 }
 //* ----------------- SECTION_ONE-CSS END ----------------- *//
 
@@ -316,45 +351,3 @@
 .sectionFour__items_item_descriptionContainer_description {
 }
 //* ----------------- SECTION_FOUR-CSS END ----------------- *//
-
-
-
-
-
-
-
-
-/*
-
-&::before {
-	content: '01';
-	color: rgba(173, 255, 0, 0.40);
-	font-family: 'Montserrat';
-	font-size: 36px;
-	font-style: normal;
-	font-weight: 700;
-	line-height: normal;
-	text-transform: uppercase;
-	margin-right: 20px;
-}
-&:hover {
-	color: #FFF;
-	span {
-		color: #ADFF00;
-	}
-}
-
-*/
-
-
-
-
-
-
-
-
-
-
-
-
-

@@ -38,6 +38,82 @@
 
 .sectionOne__information_img {
   padding: 120px 0;
+  -webkit-animation: img 2s ease-out;
+          animation: img 2s ease-out;
+}
+@-webkit-keyframes img {
+  from {
+    opacity: 0%;
+  }
+  to {
+    opacity: 100%;
+  }
+}
+@keyframes img {
+  from {
+    opacity: 0%;
+  }
+  to {
+    opacity: 100%;
+  }
+}
+
+.sectionOne__information_titleH1-green {
+  -webkit-animation: titleGreen 1.3s ease-out;
+          animation: titleGreen 1.3s ease-out;
+}
+@-webkit-keyframes titleGreen {
+  from {
+    -webkit-transform: translateY(-450px);
+            transform: translateY(-450px);
+    opacity: 0%;
+  }
+  to {
+    -webkit-transform: translateY(0px);
+            transform: translateY(0px);
+    opacity: 100%;
+  }
+}
+@keyframes titleGreen {
+  from {
+    -webkit-transform: translateY(-450px);
+            transform: translateY(-450px);
+    opacity: 0%;
+  }
+  to {
+    -webkit-transform: translateY(0px);
+            transform: translateY(0px);
+    opacity: 100%;
+  }
+}
+
+.sectionOne__information_titleH1-white {
+  -webkit-animation: titleWhite 1.3s ease-out;
+          animation: titleWhite 1.3s ease-out;
+}
+@-webkit-keyframes titleWhite {
+  from {
+    -webkit-transform: translateY(450px);
+            transform: translateY(450px);
+    opacity: 0%;
+  }
+  to {
+    -webkit-transform: translateY(0px);
+            transform: translateY(0px);
+    opacity: 100%;
+  }
+}
+@keyframes titleWhite {
+  from {
+    -webkit-transform: translateY(450px);
+            transform: translateY(450px);
+    opacity: 0%;
+  }
+  to {
+    -webkit-transform: translateY(0px);
+            transform: translateY(0px);
+    opacity: 100%;
+  }
 }
 
 .sectionTwo {
@@ -347,25 +423,3 @@
   -webkit-transition: 350ms;
   transition: 350ms;
 }
-
-/*
-
-&::before {
-	content: '01';
-	color: rgba(173, 255, 0, 0.40);
-	font-family: 'Montserrat';
-	font-size: 36px;
-	font-style: normal;
-	font-weight: 700;
-	line-height: normal;
-	text-transform: uppercase;
-	margin-right: 20px;
-}
-&:hover {
-	color: #FFF;
-	span {
-		color: #ADFF00;
-	}
-}
-
-*/

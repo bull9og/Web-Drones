@@ -36,6 +36,85 @@
   position: relative;
 }
 
+.sectionOne__information_img {
+  -webkit-animation: img 2s ease-out;
+          animation: img 2s ease-out;
+}
+@-webkit-keyframes img {
+  from {
+    opacity: 0%;
+  }
+  to {
+    opacity: 100%;
+  }
+}
+@keyframes img {
+  from {
+    opacity: 0%;
+  }
+  to {
+    opacity: 100%;
+  }
+}
+
+.sectionOne__information_titleH1-green {
+  -webkit-animation: titleGreen 1.3s ease-out;
+          animation: titleGreen 1.3s ease-out;
+}
+@-webkit-keyframes titleGreen {
+  from {
+    -webkit-transform: translateY(-450px);
+            transform: translateY(-450px);
+    opacity: 0%;
+  }
+  to {
+    -webkit-transform: translateY(0px);
+            transform: translateY(0px);
+    opacity: 100%;
+  }
+}
+@keyframes titleGreen {
+  from {
+    -webkit-transform: translateY(-450px);
+            transform: translateY(-450px);
+    opacity: 0%;
+  }
+  to {
+    -webkit-transform: translateY(0px);
+            transform: translateY(0px);
+    opacity: 100%;
+  }
+}
+
+.sectionOne__information_titleH1-white {
+  -webkit-animation: titleWhite 1.3s ease-out;
+          animation: titleWhite 1.3s ease-out;
+}
+@-webkit-keyframes titleWhite {
+  from {
+    -webkit-transform: translateY(450px);
+            transform: translateY(450px);
+    opacity: 0%;
+  }
+  to {
+    -webkit-transform: translateY(0px);
+            transform: translateY(0px);
+    opacity: 100%;
+  }
+}
+@keyframes titleWhite {
+  from {
+    -webkit-transform: translateY(450px);
+            transform: translateY(450px);
+    opacity: 0%;
+  }
+  to {
+    -webkit-transform: translateY(0px);
+            transform: translateY(0px);
+    opacity: 100%;
+  }
+}
+
 .sectionTwo {
   max-width: 100%;
   margin-top: 193px;
@@ -95,8 +174,6 @@
   font-size: 35px;
   font-weight: 600;
   line-height: normal;
-  -webkit-transition: color 0.5s ease;
-  transition: color 0.5s ease;
 }
 
 .sectionFour {
@@ -139,7 +216,7 @@
 
 .sectionFive {
   max-width: 100%;
-  margin-top: 200px;
+  margin-top: 370px;
 }
 
 .sectionFive-container {
@@ -221,3 +298,14 @@
             transform: rotate(360deg);
   }
 }
+
+/*
+	opacity: 0;
+	transform: translate(50px, 200px);
+	&.show {
+		opacity: 1;
+		transform: translate(0, 0);
+		transition: all 850ms ease-out;
+		transition-delay: 250ms;
+	}
+*/

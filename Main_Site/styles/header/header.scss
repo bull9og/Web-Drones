@@ -1,6 +1,17 @@
 //! ----------------- HEADER-CSS START ----------------- !//
 .header {
 	width: 100%;
+	animation: header 1.5s ease-out 1300ms backwards;
+	@keyframes header {
+		from {
+			transform: translateY(-150px);
+			opacity: 0%;
+		}
+		to {
+			transform: translateY(0px);
+			opacity: 100%;
+		}
+	}
 }
 .header-container {
 	align-items: center;
@@ -65,4 +76,4 @@
 		transform: scaleX(1);
 	}
 }
-//* ----------------- HEADER-CSS END ----------------- *//
+//! ----------------- HEADER-CSS END ----------------- !//

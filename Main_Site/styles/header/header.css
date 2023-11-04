@@ -1,5 +1,31 @@
 .header {
   width: 100%;
+  -webkit-animation: header 1.5s ease-out 1300ms backwards;
+          animation: header 1.5s ease-out 1300ms backwards;
+}
+@-webkit-keyframes header {
+  from {
+    -webkit-transform: translateY(-150px);
+            transform: translateY(-150px);
+    opacity: 0%;
+  }
+  to {
+    -webkit-transform: translateY(0px);
+            transform: translateY(0px);
+    opacity: 100%;
+  }
+}
+@keyframes header {
+  from {
+    -webkit-transform: translateY(-150px);
+            transform: translateY(-150px);
+    opacity: 0%;
+  }
+  to {
+    -webkit-transform: translateY(0px);
+            transform: translateY(0px);
+    opacity: 100%;
+  }
 }
 
 .header-container {
