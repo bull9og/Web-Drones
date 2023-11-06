@@ -1,0 +1,192 @@
+//? ----------------- IMPORT START ----------------- ?//
+@import '../obnulenie.css';
+@import '../global_style_CSS/globalStyle.css';
+@import '../header/header.css';
+@import '../footer/footer.css';
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;900&family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Jost:wght@400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@800;900&display=swap');
+//? ----------------- IMPORT END ----------------- ?//
+
+main {
+	background: url('../../img_source/obychenie_bg.png') center bottom no-repeat;
+}
+
+//* ----------------- SECTION_ONE-CSS START ----------------- *//
+.sectionOne {
+	width: 100%;
+}
+.sectionOne-container {
+	height: 85vh;
+	align-items: center;
+	justify-content: center;
+}
+.sectionOne__information {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	position: relative;
+}
+.sectionOne__information_img {
+	padding: 110px 0 70px 0;
+	animation: img 2s ease-out;
+	@keyframes img {
+		from {
+			opacity: 0%;
+		}
+		to {
+			opacity: 100%;
+		}
+	}
+}
+.sectionOne__information_titleH1-green {
+	animation: titleGreen 1.3s ease-out;
+	@keyframes titleGreen {
+		from {
+			transform: translateY(-450px);
+			opacity: 0%;
+		}
+		to {
+			transform: translateY(0px);
+			opacity: 100%;
+		}
+	}
+}
+.sectionOne__information_titleH1-white {
+	animation: titleWhite 1.3s ease-out;
+	@keyframes titleWhite {
+		from {
+			transform: translateY(450px);
+			opacity: 0%;
+		}
+		to {
+			transform: translateY(0px);
+			opacity: 100%;
+		}
+	}
+}
+//* ----------------- SECTION_ONE-CSS END ----------------- *//
+
+
+
+//* ----------------- SECTION_TWO-CSS START ----------------- *//
+.sectionTwo {
+	width: 100%;
+	margin-top: 500px;
+}
+.sectionTwo-container {
+	flex-direction: column;
+}
+.sectionTwo__titleH4 {
+	border-bottom: #363636 1px solid;
+	padding-bottom: 60px;
+}
+.sectionTwo__buttonsContainer {
+	width: 1050px;
+	margin: 240px auto 0 auto;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+.sectionTwo__buttonsContainer__leftButtons {
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	grid-gap: 50px;
+}
+.sectionTwo__buttonsContainer__leftButtons_Button {
+}
+.sectionTwo__buttonsContainer__rightButtons {
+	display: flex;
+	flex-direction: column;
+	gap: 50px;
+}
+.sectionTwo__buttonsContainer__rightButtons_Button {
+}
+//* ----------------- SECTION_TWO-CSS END ----------------- *//
+
+
+
+//* ----------------- SECTION_THREE-CSS START ----------------- *//
+.sectionThree {
+	width: 100%;
+	margin-top: 500px;
+}
+.sectionThree-container {
+	flex-direction: column;
+}
+.sectionThree__titleH4 {
+	border-bottom: #363636 1px solid;
+	padding-bottom: 60px;
+}
+.sectionThree__buttonsContainer {
+	margin: 240px auto 0 auto;
+	display: flex;
+	gap: 50px;
+}
+.sectionThree__buttonsContainer_button {
+}
+//* ----------------- SECTION_THREE-CSS END ----------------- *//
+
+
+
+//* ----------------- SECTION_FOUR-CSS START ----------------- *//
+.sectionFour {
+	max-width: 100%;
+	margin-top: 370px;
+}
+.sectionFour-container {
+	
+	flex-direction: column;
+	max-width: 1400px;
+	margin: 0 auto;
+}
+.sectionFour__title {
+	color: #FFF;
+	text-align: center;
+	font-feature-settings: 'case' on, 'liga' off;
+	text-shadow: 0px -10px 50px rgba(255, 255, 255, 0.15);
+	font-family: 'Rubik';
+	font-size: 96px;
+	font-weight: 400;
+	line-height: normal;
+	text-transform: uppercase;
+	span {
+		color: #1E1E1E;
+		text-shadow: 0px 0px 75px rgba(204, 255, 0, 0.20);
+		font-family: 'Rubik';
+		font-size: 96px;
+		font-weight: 400;
+		line-height: normal;
+		text-transform: uppercase;
+		-webkit-text-stroke: #ADFF00 2px;
+	}
+}
+.sectionFour__link {
+	margin-top: 200px;
+	display: flex;
+	justify-content: center;
+}
+.sectionFour__link_imgs {
+	position: relative;
+	svg {
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%,-50%);
+		&:nth-child(2) {
+			top: -71px;
+			left: -72px;
+			animation: 7s linear 0s normal none infinite running svg;
+			@keyframes svg {
+			0% {
+				transform: rotate(0deg);
+			}
+			100% {
+				transform: rotate(360deg);
+			}
+			}  
+		}
+	}
+}
+//* ----------------- SECTION_FOUR-CSS END ----------------- *//
