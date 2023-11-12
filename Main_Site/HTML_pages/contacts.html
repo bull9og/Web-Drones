@@ -7,7 +7,9 @@
 	<link rel="stylesheet" href="../styles/contacts_style_page/contacts.css">
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js" defer></script>
 	<script src="script.js" defer></script>
+	<script src="../javascript/hoverButton.js" defer></script>
 	<script src="../javascript/animationShow.js" defer></script>
+	<script src="../javascript/scroll.js" defer></script>
 	<title>WEB-DRONES / Контакты /</title>
 </head>
 
@@ -25,9 +27,9 @@
 				<li class="header__MainMenu_link"><a href="contacts.html" class="header-link">Контакты</a></li>
 			</ul>
 			<ul class="header__SecondMenu">
-				<li class="header__SecondMenu_link"><a href="registration_pages/sign_in.html" class="header-link">Вход</a></li>
+				<li class="header__SecondMenu_link"><a href="../registration_pages/sign_in.html" class="header-link">Вход</a></li>
 				<li class="header__SecondMenu_link">/</li>
-				<li class="header__SecondMenu_link"><a href="registration_pages/sign_up.html" class="header-link">Регистрация</a></li>
+				<li class="header__SecondMenu_link"><a href="../registration_pages/sign_up.html" class="header-link">Регистрация</a></li>
 			</ul>
 		</nav>
 	</header>
@@ -45,12 +47,12 @@
 						<h1 class="sectionOne__informationContainer_titleH1-white">Нам!</h1>
 					</div>
 					<div class="sectionOne__informationContainer_links">
-						<a href="#!">Задать вопрос</a>
+						<a onmouseover="hoverOnLeft()" onmouseout="hoverOffLeft()" class="left" id="left" href="#form_yakor">Задать вопрос</a>
 						<svg xmlns="http://www.w3.org/2000/svg" width="69" height="69" viewBox="0 0 69 69" fill="none">
 							<circle cx="34.5" cy="34.5" r="34.5" fill="white"/>
 							<path d="M24.9393 41.9393C24.3536 42.5251 24.3536 43.4749 24.9393 44.0607C25.5251 44.6464 26.4749 44.6464 27.0607 44.0607L24.9393 41.9393ZM44.5 26C44.5 25.1716 43.8284 24.5 43 24.5L29.5 24.5C28.6716 24.5 28 25.1716 28 26C28 26.8284 28.6716 27.5 29.5 27.5H41.5V39.5C41.5 40.3284 42.1716 41 43 41C43.8284 41 44.5 40.3284 44.5 39.5L44.5 26ZM27.0607 44.0607L44.0607 27.0607L41.9393 24.9393L24.9393 41.9393L27.0607 44.0607Z" fill="#1E1E1E"/>
 						</svg>
-						<a href="#!">Поддержать</a>
+						<a onmouseover="hoverOnRight()" onmouseout="hoverOffRight()" class="right" id="right" href="#!">Поддержать</a>
 					</div>
 				</div>
 				<div class="sectionOne__imgContainer">
@@ -60,9 +62,9 @@
 		</section>
         <section class="sectionTwo">
             <div class="sectionTwo-container">
-				<h4 class="sectionThree__titleH4 anim-items no-hide"><div></div>Задать вопрос</h4>
+				<h4 class="sectionThree__titleH4 anim-items no-hide" id="form_yakor"><div></div>Заполните поля</h4>
             	<form id="form" class="sectionTwo__formContainer anim-items no-hide">
-                	<h2 class="sectionTwo__formContainer__titleH3" style="color: #FFF;">Заполните поля</h2>
+                	<h2 class="sectionTwo__formContainer__titleH3" style="color: #FFF;">Задать вопрос</h2>
                     <div class="form__items">
                         <input name="email" placeholder="Почта:" id="form_item" type="email" class="form_input _req _email" >
 						<textarea name="message" id="form_item" cols="30" rows="10" placeholder='Ваш вопрос:' class="form_textarea _req"></textarea>

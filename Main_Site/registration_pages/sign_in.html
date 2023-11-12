@@ -3,7 +3,8 @@
 	<head>
 		<meta charset="UTF-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<link rel="stylesheet" href="styles/index_style_page/styles.css">
+		<link rel="stylesheet" href="../styles/sign-in-up_style/sign-in.css">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js" defer></script>
 		<script src="../javascript/animationShow.js" defer></script>
 		<title>WEB-DRONES / Вход /</title>
 	</head>
@@ -11,28 +12,37 @@
 
 
 
-	<!----------------- HEADER START -----------------
+	<!----------------- HEADER START ----------------->
 	<header class="header">
 		<nav class="header-container">
 			<ul class="header__MainMenu">
 				<li class="header__MainMenu_link"><a href="../index.html" class="header-link">Главная</a></li>
-				<li class="header__MainMenu_link"><a href="technology.html" class="header-link">Технологии</a></li>
-				<li class="header__MainMenu_link"><a href="obychenie.html" class="header-link">Обучение</a></li>
-				<li class="header__MainMenu_link"><a href="contacts.html" class="header-link">Контакты</a></li>
-			</ul>
-			<ul class="header__SecondMenu">
-				<li class="header__SecondMenu_link"><a href="registration_pages/sign_in.html" class="header-link">Вход</a></li>
-				<li class="header__SecondMenu_link">/</li>
-				<li class="header__SecondMenu_link"><a href="registration_pages/sign_up.html" class="header-link">Регистрация</a></li>
+				<li class="header__MainMenu_link"><a href="../HTML_pages/technology.html" class="header-link">Технологии</a></li>
+				<li class="header__MainMenu_link"><a href="../HTML_pages/obychenie.html" class="header-link">Обучение</a></li>
+				<li class="header__MainMenu_link"><a href="../HTML_pages/contacts.html" class="header-link">Контакты</a></li>
 			</ul>
 		</nav>
 	</header>
-	--------------- HEADER END ----------------->
+	<!--------------- HEADER END ----------------->
 
 
 
 	<!----------------- MAIN START ----------------->
-	<main></main>
+	<main>
+		<section class="sectionOne">
+			<div class="sectionOne-container anim-items-left no-hide">
+				<form id="form" class="sectionOne__formContainer anim-items no-hide">
+                	<h2 class="sectionOne__formContainer__titleH3" style="color: #FFF;">Вход</h2>
+                    <div class="form__items">
+                        <input name="email" placeholder="Почта:" id="form_item" type="email" class="form_input" >
+						<input name="pasword" placeholder="Пароль:" id="form_item" type="password" class="form_input" >
+                    </div>
+                    <button type="submit" class="sectionOne__formContainer__button">Войти</button>
+					<p class="sectionOne__formContainer__description">Ещё не зарегистрированы? <a href="sign_up.html">Регистрация</a></p>
+            	</form>
+			</div>
+		</section>
+	</main>
 	<!----------------- MAIN END ----------------->
 
 
