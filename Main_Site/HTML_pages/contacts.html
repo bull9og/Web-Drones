@@ -5,6 +5,8 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="stylesheet" href="../styles/contacts_style_page/contacts.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js" defer></script>
+	<script src="script.js" defer></script>
 	<script src="../javascript/animationShow.js" defer></script>
 	<title>WEB-DRONES / Контакты /</title>
 </head>
@@ -23,9 +25,9 @@
 				<li class="header__MainMenu_link"><a href="contacts.html" class="header-link">Контакты</a></li>
 			</ul>
 			<ul class="header__SecondMenu">
-				<li class="header__SecondMenu_link"><a href="#!" class="header-link">Вход</a></li>
+				<li class="header__SecondMenu_link"><a href="registration_pages/sign_in.html" class="header-link">Вход</a></li>
 				<li class="header__SecondMenu_link">/</li>
-				<li class="header__SecondMenu_link"><a href="#!" class="header-link">Регистрация</a></li>
+				<li class="header__SecondMenu_link"><a href="registration_pages/sign_up.html" class="header-link">Регистрация</a></li>
 			</ul>
 		</nav>
 	</header>
@@ -59,11 +61,11 @@
         <section class="sectionTwo">
             <div class="sectionTwo-container">
 				<h4 class="sectionThree__titleH4 anim-items no-hide"><div></div>Задать вопрос</h4>
-            	<form id="form_body" class="sectionTwo__formContainer anim-items no-hide" method="post">
+            	<form id="form" class="sectionTwo__formContainer anim-items no-hide">
                 	<h2 class="sectionTwo__formContainer__titleH3" style="color: #FFF;">Заполните поля</h2>
                     <div class="form__items">
-                        <input name="email" placeholder="Почта: *" id="form_item" type="email" class="form_input _req _email" >
-						<textarea name="messenger" id="form_item" cols="30" rows="10" placeholder='Ваш вопрос: *' class="form_textarea _req"></textarea>
+                        <input name="email" placeholder="Почта:" id="form_item" type="email" class="form_input _req _email" >
+						<textarea name="message" id="form_item" cols="30" rows="10" placeholder='Ваш вопрос:' class="form_textarea _req"></textarea>
                     </div>
                     <button type="submit" class="sectionTwo__formContainer__button">Отправить</button>
             	</form>
