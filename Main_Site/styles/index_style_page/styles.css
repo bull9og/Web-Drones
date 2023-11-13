@@ -191,6 +191,13 @@
 
 .sectionFour__featuresItems_item {
   padding: 100px 0 30px 0;
+  border-top: 1px solid #363636;
+}
+.sectionFour__featuresItems_item:first-child {
+  margin-top: 100px;
+}
+.sectionFour__featuresItems_item:last-child {
+  border-bottom: 1px solid #363636;
 }
 .sectionFour__featuresItems_item:hover h2 {
   color: #FFF;
@@ -298,14 +305,3 @@
             transform: rotate(360deg);
   }
 }
-
-/*
-	opacity: 0;
-	transform: translate(50px, 200px);
-	&.show {
-		opacity: 1;
-		transform: translate(0, 0);
-		transition: all 850ms ease-out;
-		transition-delay: 250ms;
-	}
-*/

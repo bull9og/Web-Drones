@@ -8,8 +8,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Rubik:wght@800;900&display=swap');
 //? ----------------- IMPORT END ----------------- ?//
 
-main {
-	background: url('../../img_source/obychenie_bg.png') center bottom no-repeat;
+
+body {
+	background-image: url('../../img_source/obychenie_bg.png');
+	background-position: top;
 }
 
 //* ----------------- SECTION_ONE-CSS START ----------------- *//

@@ -5,8 +5,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;900&family=Roboto&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Jost:wght@400;500;600;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Rubik:wght@800;900&display=swap");
-main {
-  background: url("../../img_source/obychenie_bg.png") center bottom no-repeat;
+body {
+  background-image: url("../../img_source/obychenie_bg.png");
+  background-position: top;
 }
 
 .sectionOne {
