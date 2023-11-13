@@ -5,12 +5,13 @@ body {
 	user-select: none; //?запрет на копирование
 	display: flex;
 	flex-direction: column;
+	padding: 0 45px;
 }
 main {
 	flex: 1 1 auto;
 }
 [class*='-container'] {
-	max-width: 1400px;
+	max-width: 1490px;
 	margin: 0 auto;
 	display: flex;
 }

@@ -12,6 +12,7 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  padding: 0 45px;
 }
 
 main {
@@ -21,7 +22,7 @@ main {
 }
 
 [class*=-container] {
-  max-width: 1400px;
+  max-width: 1490px;
   margin: 0 auto;
   display: -webkit-box;
   display: -ms-flexbox;
