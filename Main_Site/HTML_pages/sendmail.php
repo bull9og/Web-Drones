@@ -11,11 +11,11 @@
 	$mail->IsHTML(true);
 
 	// От кого письмо
-	$mail->setFrom('message@gmail.com');
+	$mail->setFrom($_POST['email']);
 	// Кому отправить
 	$mail->addAddress('crovex@swdteam.ru');
 	// Тема письма
-	$mail->Subject = 'Здравствуйте!';
+	$mail->Subject = $_POST['message'];
 
 	$body = '';
 	if(!empty(trim($_POST['email']))) {

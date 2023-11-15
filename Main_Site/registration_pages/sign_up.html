@@ -44,14 +44,13 @@
 	<main>
 		<section class="sectionOne">
 			<section class="sectionOne">
-				<div class="sectionOne-container anim-items-left no-hide">
-					<form id="form" class="sectionOne__formContainer anim-items no-hide">
+				<div class="sectionOne-container anim-items no-hide">
+					<form id="form" action="signup.php" method="post" class="sectionOne__formContainer">
 						<h2 class="sectionOne__formContainer__titleH3" style="color: #FFF;">Регистрация</h2>
 						<div class="form__items">
-							<input name="name" placeholder="Имя:" id="form_item" type="name" class="form_input">
-							<input name="email" placeholder="Почта:" id="form_item" type="email" class="form_input">
-							<input name="password" placeholder="Пароль:" id="form_item" type="password"
-								class="form_input">
+							<input name="name" placeholder="Имя:" type="text" class="form_input">
+							<input name="email" placeholder="Почта:" type="email" class="form_input">
+							<input name="password" placeholder="Пароль:" type="password" class="form_input">
 						</div>
 						<button type="submit" class="sectionOne__formContainer__button">Зарегистрироваться </button>
 						<p class="sectionOne__formContainer__description">Уже зарегистрированы? <a
