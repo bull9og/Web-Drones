@@ -12,7 +12,6 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  padding: 0 45px;
 }
 
 main {
@@ -27,6 +26,7 @@ main {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  padding: 0 45px;
 }
 
 [class*=header-link] {

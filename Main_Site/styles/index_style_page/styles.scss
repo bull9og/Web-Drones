@@ -106,7 +106,7 @@
 //* ----------------- SECTION_THREE-CSS START ----------------- *//
 .sectionThree {
 	max-width: 100%;
-	margin-top: 200px;
+	margin-top: 300px;
 }
 .sectionThree__container {
 	max-width: 1400px;
@@ -114,13 +114,17 @@
 	background-color: #1E1E1E;
 }
 .sectionThree_text {
-	color: #363636;
+	color: #fff ;
 	font-family: 'Montserrat';
 	font-size: 35px;
 	font-weight: 600;
 	line-height: normal;
-	transition: color 0.5s ease;
+	line-height: 50px;
+	border: 2px solid #ADFF00;
+	padding: 65px;
+	border-radius: 25px;
 }
+
 //* ----------------- SECTION_THREE-CSS END ----------------- *//
 
 
