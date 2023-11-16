@@ -37,6 +37,11 @@
           justify-content: space-between;
   padding: 40px 0;
 }
+@media (max-width: 1790px) {
+  .header-container {
+    padding: 40px 45px;
+  }
+}
 
 .header__MainMenu {
   display: -webkit-box;
@@ -53,6 +58,11 @@
 }
 .header__MainMenu_link:last-child {
   margin-right: 0;
+}
+@media (max-width: 1020px) {
+  .header__MainMenu_link {
+    margin-right: 45px;
+  }
 }
 .header__MainMenu_link a::after {
   content: "";

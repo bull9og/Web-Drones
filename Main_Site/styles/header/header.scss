@@ -17,6 +17,9 @@
 	align-items: center;
 	justify-content: space-between;
 	padding: 40px 0;
+	@media (max-width: 1790px) {
+		padding: 40px 45px;
+	}
 }
 .header__MainMenu {
 	display: flex;
@@ -27,6 +30,9 @@
 	position: relative;
 	&:last-child {
 		margin-right: 0;
+	}
+	@media (max-width: 1020px) {
+		margin-right: 45px;
 	}
 	a::after {
 		content: '';
@@ -39,7 +45,7 @@
 		border-radius: 3px;
 		transform-origin: right;
 		transform: scaleX(0);
-		transition: transform .5s;
+		transition: transform 0.5s;
 	}
 	a:hover::after {
 		transform-origin: left;

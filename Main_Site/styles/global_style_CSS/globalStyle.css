@@ -20,6 +20,10 @@ main {
           flex: 1 1 auto;
 }
 
+img {
+  max-width: 100%;
+}
+
 [class*=-container] {
   max-width: 1490px;
   margin: 0 auto;
@@ -44,6 +48,11 @@ main {
   -webkit-transition: 0.5s;
   transition: 0.5s;
 }
+@media (max-width: 1020px) {
+  [class*=header-link] {
+    font-size: 14px;
+  }
+}
 
 [class*=_titleH1-white] {
   color: #FFF;
@@ -56,6 +65,24 @@ main {
   text-transform: uppercase;
   z-index: 2;
   margin-top: -170px;
+}
+@media (max-width: 1790px) {
+  [class*=_titleH1-white] {
+    font-size: 140px;
+    margin-top: -120px;
+  }
+}
+@media (max-width: 1440px) {
+  [class*=_titleH1-white] {
+    font-size: 110px;
+    margin-top: -90px;
+  }
+}
+@media (max-width: 835px) {
+  [class*=_titleH1-white] {
+    font-size: 75px;
+    margin-top: -75px;
+  }
 }
 
 [class*=_titleH1-green] {
@@ -70,6 +97,25 @@ main {
   -webkit-text-stroke: #ADFF00 3px;
   z-index: -1;
   margin-bottom: -220px;
+}
+@media (max-width: 1790px) {
+  [class*=_titleH1-green] {
+    font-size: 140px;
+    margin-bottom: -150px;
+  }
+}
+@media (max-width: 1440px) {
+  [class*=_titleH1-green] {
+    font-size: 110px;
+    margin-bottom: -120px;
+  }
+}
+@media (max-width: 835px) {
+  [class*=_titleH1-green] {
+    font-size: 75px;
+    -webkit-text-stroke: #ADFF00 2px;
+    margin-bottom: -95px;
+  }
 }
 
 [class*=_titleH4] {
@@ -94,6 +140,11 @@ main {
   background: #ADFF00;
   margin-right: 15px;
 }
+@media (max-width: 1020px) {
+  [class*=_titleH4] {
+    font-size: 16px;
+  }
+}
 
 [class*=_titleH2] {
   font-family: "Rubik";
@@ -107,6 +158,17 @@ main {
   -webkit-text-stroke: #FFF 1.5px;
   -webkit-transition: 600ms;
   transition: 600ms;
+}
+@media (max-width: 1790px) {
+  [class*=_titleH2] {
+    font-size: 50px;
+  }
+}
+@media (max-width: 835px) {
+  [class*=_titleH2] {
+    font-size: 40px;
+    -webkit-text-stroke: #FFF 1px;
+  }
 }
 
 [class*=_titleH3] {

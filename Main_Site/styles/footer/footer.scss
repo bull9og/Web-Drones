@@ -1,3 +1,4 @@
+//! ----------------- FOOTER-CSS START ----------------- !//
 .footer {
     max-width: 100%;
 	margin-top: 310px;
@@ -6,6 +7,9 @@
     align-items: center;
 	justify-content: space-between;
 	padding-bottom: 110px;
+	@media (max-width: 1020px) {
+		padding-bottom: 80px;
+	}
 	padding-top: 60px;
 	border-top: 1px solid #363636;
 }
@@ -16,31 +20,41 @@
 }
 .footer__information_subTitle {
     color: #FFF;
-    font-family: Montserrat;
+    font-family: 'Montserrat';
     font-size: 20px;
     font-weight: 700;
     line-height: normal;
     text-transform: uppercase;
-    width: 476px;
+    max-width: 476px;
     margin-bottom: 15px;
+	@media (max-width: 1020px) {
+		font-size: 14px;
+		max-width: 350px;
+	}
 }
 .footer__information_number {
     color: #858585;
-    font-family: Montserrat;
+    font-family: 'Montserrat';
     font-size: 20px;
     font-weight: 400;
     line-height: normal;
     text-decoration-line: underline;
     margin-bottom: 10px;
+	@media (max-width: 1020px) {
+		font-size: 14px;
+	}
 }
 .footer__information_geolocation {
     color: #858585;
-    font-family: Montserrat;
+    font-family: 'Montserrat';
     font-size: 20px;
     font-weight: 400;
     line-height: normal;
     text-decoration-line: underline;
     margin-bottom: 45px;
+	@media (max-width: 1020px) {
+		font-size: 14px;
+	}
 }
 .footer__information_crovex {
     color: #ADFF00;
@@ -55,6 +69,9 @@
 }
 .footer__menuAndSoc_menu {
  margin-right: 220px;
+	@media (max-width: 1270px) {
+		margin-right: 100px;
+	}
 }
 .footer__menuAndSoc_menu_titleH4 {
     margin-bottom: 55px;
@@ -68,11 +85,14 @@
     }
     a {
         color: #FFF;
-        font-family: Montserrat;
+        font-family: 'Montserrat';
         font-size: 16px;
         font-weight: 400;
         line-height: normal;
         transition: 500ms;
+		@media (max-width: 1020px) {
+			font-size: 14px;
+		}
         &:hover {
             color: #ADFF00;
         }
@@ -90,13 +110,17 @@
     }
     a {
         color: #FFF;
-        font-family: Montserrat;
+        font-family: 'Montserrat';
         font-size: 16px;
         font-weight: 400;
         line-height: normal;
         transition: 500ms;
+		@media (max-width: 1020px) {
+			font-size: 14px;
+		}
         &:hover {
             color: #ADFF00;
         }
     }
 }
+//! ----------------- FOOTER-CSS END ----------------- !//

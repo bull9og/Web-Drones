@@ -14,6 +14,11 @@
   padding-top: 60px;
   border-top: 1px solid #363636;
 }
+@media (max-width: 1020px) {
+  .footer-container {
+    padding-bottom: 80px;
+  }
+}
 
 .footer__information_titleH4 {
   margin-bottom: 55px;
@@ -21,33 +26,49 @@
 
 .footer__information_subTitle {
   color: #FFF;
-  font-family: Montserrat;
+  font-family: "Montserrat";
   font-size: 20px;
   font-weight: 700;
   line-height: normal;
   text-transform: uppercase;
-  width: 476px;
+  max-width: 476px;
   margin-bottom: 15px;
+}
+@media (max-width: 1020px) {
+  .footer__information_subTitle {
+    font-size: 14px;
+    max-width: 350px;
+  }
 }
 
 .footer__information_number {
   color: #858585;
-  font-family: Montserrat;
+  font-family: "Montserrat";
   font-size: 20px;
   font-weight: 400;
   line-height: normal;
   text-decoration-line: underline;
   margin-bottom: 10px;
 }
+@media (max-width: 1020px) {
+  .footer__information_number {
+    font-size: 14px;
+  }
+}
 
 .footer__information_geolocation {
   color: #858585;
-  font-family: Montserrat;
+  font-family: "Montserrat";
   font-size: 20px;
   font-weight: 400;
   line-height: normal;
   text-decoration-line: underline;
   margin-bottom: 45px;
+}
+@media (max-width: 1020px) {
+  .footer__information_geolocation {
+    font-size: 14px;
+  }
 }
 
 .footer__information_crovex {
@@ -67,6 +88,11 @@
 .footer__menuAndSoc_menu {
   margin-right: 220px;
 }
+@media (max-width: 1270px) {
+  .footer__menuAndSoc_menu {
+    margin-right: 100px;
+  }
+}
 
 .footer__menuAndSoc_menu_titleH4 {
   margin-bottom: 55px;
@@ -80,12 +106,17 @@
 }
 .menu_link a {
   color: #FFF;
-  font-family: Montserrat;
+  font-family: "Montserrat";
   font-size: 16px;
   font-weight: 400;
   line-height: normal;
   -webkit-transition: 500ms;
   transition: 500ms;
+}
+@media (max-width: 1020px) {
+  .menu_link a {
+    font-size: 14px;
+  }
 }
 .menu_link a:hover {
   color: #ADFF00;
@@ -103,12 +134,17 @@
 }
 .soc_link a {
   color: #FFF;
-  font-family: Montserrat;
+  font-family: "Montserrat";
   font-size: 16px;
   font-weight: 400;
   line-height: normal;
   -webkit-transition: 500ms;
   transition: 500ms;
+}
+@media (max-width: 1020px) {
+  .soc_link a {
+    font-size: 14px;
+  }
 }
 .soc_link a:hover {
   color: #ADFF00;
