@@ -51,6 +51,12 @@
       -ms-flex-align: center;
           align-items: center;
 }
+@media (max-width: 765px) {
+  .header__MainMenu::before {
+    content: url("../../img_source/menu.svg");
+    cursor: pointer;
+  }
+}
 
 .header__MainMenu_link {
   margin-right: 60px;
@@ -91,6 +97,11 @@
   -webkit-transform: scaleX(1);
       -ms-transform: scaleX(1);
           transform: scaleX(1);
+}
+@media (max-width: 765px) {
+  .header__MainMenu_link {
+    display: none;
+  }
 }
 
 .header__SecondMenu {
@@ -138,11 +149,4 @@
   -webkit-transform: scaleX(1);
       -ms-transform: scaleX(1);
           transform: scaleX(1);
-}
-
-.checkbtn {
-  font-size: 30px;
-  color: #FFF;
-  float: right;
-  margin-right: 50px;
 }

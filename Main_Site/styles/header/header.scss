@@ -24,6 +24,12 @@
 .header__MainMenu {
 	display: flex;
 	align-items: center;
+	@media (max-width: 765px) {
+		&::before {
+			content: url('../../img_source/menu.svg');
+			cursor: pointer;
+		}
+	}
 }
 .header__MainMenu_link {
 	margin-right: 60px;
@@ -50,6 +56,9 @@
 	a:hover::after {
 		transform-origin: left;
 		transform: scaleX(1);
+	}
+	@media (max-width: 765px) {
+		display: none;
 	}
 }
 .header__SecondMenu {
@@ -81,11 +90,5 @@
 		transform-origin: left;
 		transform: scaleX(1);
 	}
-}
-.checkbtn {
-	font-size: 30px;
-	color: #FFF;
-	float: right;
-	margin-right: 50px;
 }
 //! ----------------- HEADER-CSS END ----------------- !//
