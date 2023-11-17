@@ -12,8 +12,16 @@
 	}
 	padding-top: 60px;
 	border-top: 1px solid #363636;
+	@media (max-width: 800px) {
+		display: flex;
+		flex-direction: column;
+		text-align: center;
+	}
 }
 .footer__information {
+	@media (max-width: 800px) {
+		margin-bottom: 100px;
+	}
 }
 .footer__information_titleH4 {
     margin-bottom: 55px;
@@ -65,7 +73,6 @@
 }
 .footer__menuAndSoc {
     display: flex;
-   
 }
 .footer__menuAndSoc_menu {
  margin-right: 220px;

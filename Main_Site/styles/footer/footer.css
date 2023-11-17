@@ -19,6 +19,24 @@
     padding-bottom: 80px;
   }
 }
+@media (max-width: 800px) {
+  .footer-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    text-align: center;
+  }
+}
+
+@media (max-width: 800px) {
+  .footer__information {
+    margin-bottom: 100px;
+  }
+}
 
 .footer__information_titleH4 {
   margin-bottom: 55px;

@@ -139,3 +139,10 @@
       -ms-transform: scaleX(1);
           transform: scaleX(1);
 }
+
+.checkbtn {
+  font-size: 30px;
+  color: #FFF;
+  float: right;
+  margin-right: 50px;
+}
