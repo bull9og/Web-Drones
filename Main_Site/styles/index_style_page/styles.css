@@ -209,13 +209,14 @@
 .sectionThree_text {
   color: #fff;
   font-family: "Montserrat";
-  font-size: 35px;
+  font-size: 30px;
   font-weight: 600;
   line-height: normal;
   line-height: 50px;
   border: 2px solid #ADFF00;
   padding: 65px;
   border-radius: 25px;
+  text-wrap: balance;
 }
 @media (max-width: 1790px) {
   .sectionThree_text {
