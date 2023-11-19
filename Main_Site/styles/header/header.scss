@@ -2,6 +2,8 @@
 .header {
 	width: 100%;
 	animation: header 1.5s ease-out 1300ms backwards;
+	z-index: 99;
+	background: #1e1e1e;
 	@keyframes header {
 		from {
 			transform: translateY(-150px);
