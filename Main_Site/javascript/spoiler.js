@@ -7,3 +7,11 @@ $(document).ready(function() {
 		$(this).toggleClass('active').next().slideToggle(300);
 	});
 });
+
+$(document).ready(function() {
+	$('.header__menuBurger').click(function(event) {
+		$('.header__menuBurger, .header__MainMenu').toggleClass('click');
+		$('.header__menuBurger, .header__MainMenu').remove('click');
+		$('body').toggleClass('lockScroll');
+	});
+});

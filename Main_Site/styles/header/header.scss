@@ -12,6 +12,13 @@
 			opacity: 100%;
 		}
 	}
+	@media (max-width: 765px) {
+		position: fixed;
+		margin-top: -8vh;
+		z-index: 99;
+		background: #1e1e1e;
+		border-bottom: 1px solid #363636;
+	}
 }
 .header-container {
 	align-items: center;
@@ -25,28 +32,29 @@
 	display: none;
 	@media (max-width: 765px) {
 		display: block;
-		width: 35px;
+		width: 25px;
 		height: 2px;
 		background: #FFF;
 		position: relative;
 		transition: 300ms;
+		z-index: 100;
 		&::before {
 			content: '';
 			position: absolute;
-			width: 15px;
+			width: 11px;
 			height: 2px;
 			background: #FFF;
-			top: -10px;
+			top: -7px;
 			right: 0;
 			transition: 300ms;
 		}
 		&::after {
 			content: '';
 			position: absolute;
-			width: 15px;
+			width: 11px;
 			height: 2px;
 			background: #FFF;
-			bottom: -10px;
+			bottom: -7px;
 			left: 0;
 			transition: 300ms;
 		}
@@ -59,14 +67,14 @@
 				background: #ADFF00;
 				transition: 300ms;
 				rotate: -90deg;
-				right: 10px;
+				right: 7px;
 			}
 			&::after {
 				content: '';
 				background: #ADFF00;
 				transition: 300ms;
 				rotate: -90deg;
-				left: 10px;
+				left: 7px;
 			}
 		}
 	}
@@ -74,6 +82,34 @@
 .header__MainMenu {
 	display: flex;
 	align-items: center;
+	@media (max-width: 765px) {
+		display: none;
+		&.click {
+			position: fixed;
+			left: 0;
+			top: 0;
+			transition: 350ms;
+			display: block;
+			width: 100vw;
+			height: 100vh;
+			border-radius: 0 25px 25px 0;
+			z-index: 98;
+			padding-left: 45px;
+			padding-top: 150px;
+			backdrop-filter: blur(10px);
+			.header__MainMenu_link {
+				margin: 0;
+				margin-bottom: 30px;
+				a {
+					font-size: 18px;
+					&::after {
+						display: none;
+					}
+				}
+			}
+		}
+	}
+
 }
 .header__MainMenu_link {
 	margin-right: 60px;
@@ -101,9 +137,6 @@
 		transform-origin: left;
 		transform: scaleX(1);
 	}
-	@media (max-width: 765px) {
-		display: none;
-	}
 }
 .header__SecondMenu {
 	display: flex;
@@ -116,6 +149,9 @@
 	font-size: 16px;
 	&:nth-child(2) {
 		margin: 0 30px;
+		@media (max-width: 440px) {
+			margin: 0 15px;
+		}
 	}
 	a::after {
 		content: '';
@@ -133,6 +169,19 @@
 	a:hover::after {
 		transform-origin: left;
 		transform: scaleX(1);
+	}
+	@media (max-width: 765px) {
+		z-index: 100;
+		font-size: 18px;
+		a {
+			font-size: 18px;
+		}
+	}
+	@media (max-width: 440px) {
+		font-size: 14px;
+		a {
+			font-size: 14px;
+		}
 	}
 }
 //! ----------------- HEADER-CSS END ----------------- !//

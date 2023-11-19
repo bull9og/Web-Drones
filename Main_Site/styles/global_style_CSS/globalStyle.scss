@@ -5,6 +5,12 @@ body {
 	user-select: none; //?запрет на копирование
 	display: flex;
 	flex-direction: column;
+	&.lockScroll {
+		overflow: hidden;
+	}
+	@media (max-width: 765px) {
+		margin-top: 8vh;
+	}
 }
 main {
 	flex: 1 1 auto;
@@ -57,6 +63,13 @@ img {
 		font-size: 75px;
 		margin-top: -75px;
 	}
+	@media (max-width: 590px) {
+		font-size: 55px;
+		margin: 0;
+	}
+	@media (max-width: 440px) {
+		font-size: 40px;
+	}
 }
 [class*='_titleH1-green'] {
 	text-shadow: 0px 0px 75px rgba(204, 255, 0, 0.15);
@@ -83,6 +96,14 @@ img {
 		-webkit-text-stroke: #ADFF00 2px;
 		margin-bottom: -95px;
 	}
+	@media (max-width: 590px) {
+		font-size: 55px;
+		-webkit-text-stroke: #ADFF00 1px;
+		margin: 0;
+	}
+	@media (max-width: 440px) {
+		font-size: 40px;
+	}
 }
 [class*='_titleH4'] {
 	color: #FFF;
@@ -104,6 +125,13 @@ img {
 	@media (max-width: 1020px) {
 		font-size: 16px;
 	}
+	@media (max-width: 440px) {
+		font-size: 14px;
+		div {
+			width: 7px;
+			height: 7px;
+		}
+	}
 }
 [class*='_titleH2'] {
 	font-family: 'Rubik';
@@ -122,6 +150,15 @@ img {
 	@media (max-width: 835px) {
 		font-size: 40px;
 		-webkit-text-stroke: #FFF 1px;
+	}
+	@media (max-width: 590px) {
+		font-size: 32px;
+		letter-spacing: 4px;
+	}
+	@media (max-width: 440px) {
+		font-size: 26px;
+		letter-spacing: 4px;
+		-webkit-text-stroke: #FFF 0.5px;
 	}
 }
 [class*='_titleH3'] {
@@ -199,5 +236,7 @@ img {
 //*                 @media (max-width: 835px)
 //*                 @media (max-width: 800px)
 //*                 @media (max-width: 765px)
+//*                 @media (max-width: 590px)
+//*                 @media (max-width: 440px)
 
 //? ----------------- GLOBAL-CSS @ MEDIA END ----------------- ?//
