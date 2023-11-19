@@ -216,6 +216,9 @@
 		@media (max-width: 1020px) {
 			font-size: 14px;
 		}
+		@media (max-width: 765px) {
+			justify-content: start;
+		}
 	}
 }
 .sectionFour__featuresItems_item_titleH2 {

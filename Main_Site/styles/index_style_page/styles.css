@@ -296,6 +296,13 @@
     font-size: 14px;
   }
 }
+@media (max-width: 765px) {
+  .sectionFour__featuresItems_item p {
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: start;
+  }
+}
 
 .sectionFive {
   max-width: 100%;
