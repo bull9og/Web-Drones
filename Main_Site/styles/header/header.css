@@ -31,11 +31,11 @@
 }
 @media (max-width: 765px) {
   .header {
-    position: fixed;
-    margin-top: -8vh;
-    z-index: 99;
-    background: #1e1e1e;
-    border-bottom: 1px solid #363636;
+    position: fixed !important;
+    margin-top: -8vh !important;
+    z-index: 99 !important;
+    background: #1e1e1e !important;
+    border-bottom: 1px solid #363636 !important;
   }
 }
 
@@ -50,7 +50,7 @@
 }
 @media (max-width: 1790px) {
   .header-container {
-    padding: 40px 45px;
+    padding: 40px 45px !important;
   }
 }
 

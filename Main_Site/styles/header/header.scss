@@ -15,11 +15,11 @@
 		}
 	}
 	@media (max-width: 765px) {
-		position: fixed;
-		margin-top: -8vh;
-		z-index: 99;
-		background: #1e1e1e;
-		border-bottom: 1px solid #363636;
+		position: fixed !important;
+		margin-top: -8vh !important;
+		z-index: 99 !important;
+		background: #1e1e1e !important;
+		border-bottom: 1px solid #363636 !important;
 	}
 }
 .header-container {
@@ -27,7 +27,7 @@
 	justify-content: space-between;
 	padding: 40px 0;
 	@media (max-width: 1790px) {
-		padding: 40px 45px;
+		padding: 40px 45px !important;
 	}
 }
 .header__menuBurger {
