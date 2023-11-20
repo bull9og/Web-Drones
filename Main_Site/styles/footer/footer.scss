@@ -8,19 +8,19 @@
 	justify-content: space-between;
 	padding-bottom: 110px;
 	@media (max-width: 1020px) {
-		padding-bottom: 80px;
+		padding-bottom: 80px !important;
 	}
 	padding-top: 60px;
 	border-top: 1px solid #363636;
 	@media (max-width: 800px) {
-		display: flex;
-		flex-direction: column;
-		text-align: center;
+		display: flex !important;
+		flex-direction: column !important;
+		text-align: center !important;
 	}
 }
 .footer__information {
 	@media (max-width: 800px) {
-		margin-bottom: 100px;
+		margin-bottom: 100px !important;
 	}
 }
 .footer__information_titleH4 {
@@ -36,8 +36,8 @@
     max-width: 476px;
     margin-bottom: 15px;
 	@media (max-width: 1020px) {
-		font-size: 14px;
-		max-width: 350px;
+		font-size: 14px !important;
+		max-width: 350px !important;
 	}
 }
 .footer__information_number {
@@ -49,7 +49,7 @@
     text-decoration-line: underline;
     margin-bottom: 10px;
 	@media (max-width: 1020px) {
-		font-size: 14px;
+		font-size: 14px !important;
 	}
 }
 .footer__information_geolocation {
@@ -61,12 +61,12 @@
     text-decoration-line: underline;
     margin-bottom: 45px;
 	@media (max-width: 1020px) {
-		font-size: 14px;
+		font-size: 14px !important;
 	}
 }
 .footer__information_crovex {
     color: #ADFF00;
-    font-family: Montserrat;
+    font-family: 'Montserrat';
     font-size: 16px;
     font-weight: 400;
     line-height: normal;
@@ -77,7 +77,7 @@
 .footer__menuAndSoc_menu {
  margin-right: 220px;
 	@media (max-width: 1270px) {
-		margin-right: 100px;
+		margin-right: 100px !important;
 	}
 }
 .footer__menuAndSoc_menu_titleH4 {
@@ -98,7 +98,7 @@
         line-height: normal;
         transition: 500ms;
 		@media (max-width: 1020px) {
-			font-size: 14px;
+			font-size: 14px !important;
 		}
         &:hover {
             color: #ADFF00;
@@ -123,7 +123,7 @@
         line-height: normal;
         transition: 500ms;
 		@media (max-width: 1020px) {
-			font-size: 14px;
+			font-size: 14px !important;
 		}
         &:hover {
             color: #ADFF00;
