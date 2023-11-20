@@ -169,6 +169,15 @@ img {
 	font-weight: 700;
 	line-height: normal;
 	text-transform: uppercase;
+	@media (max-width: 835px) {
+		font-size: 26px;
+	}
+	@media (max-width: 590px) {
+		font-size: 22px;
+	}
+	@media (max-width: 440px) {
+		font-size: 18px;
+	}
 }
 [class*='_description'] {
 	color: #FFF;
@@ -232,6 +241,7 @@ img {
 //*                 @media (max-width: 1790px)
 //*                 @media (max-width: 1440px)
 //*                 @media (max-width: 1270px)
+//*                 @media (max-width: 1080px)
 //*                 @media (max-width: 1020px)
 //*                 @media (max-width: 835px)
 //*                 @media (max-width: 800px)

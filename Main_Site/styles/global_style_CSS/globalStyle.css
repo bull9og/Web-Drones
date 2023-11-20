@@ -233,6 +233,21 @@ img {
   line-height: normal;
   text-transform: uppercase;
 }
+@media (max-width: 835px) {
+  [class*=_titleH3] {
+    font-size: 26px;
+  }
+}
+@media (max-width: 590px) {
+  [class*=_titleH3] {
+    font-size: 22px;
+  }
+}
+@media (max-width: 440px) {
+  [class*=_titleH3] {
+    font-size: 18px;
+  }
+}
 
 [class*=_description] {
   color: #FFF;

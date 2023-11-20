@@ -2,6 +2,8 @@
   width: 100%;
   -webkit-animation: header 1.5s ease-out 1300ms backwards;
           animation: header 1.5s ease-out 1300ms backwards;
+  z-index: 99;
+  background: #1e1e1e;
 }
 @-webkit-keyframes header {
   from {
