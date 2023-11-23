@@ -212,23 +212,23 @@ body {
 }
 @media (max-width: 1270px) {
   .sectionTwo__buttonsContainer {
-    width: 100%;
+    width: 100% !important;
   }
 }
 @media (max-width: 1020px) {
   .sectionTwo__buttonsContainer {
-    margin: 180px auto 0 auto;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    grid-gap: 120px;
+    margin: 180px auto 0 auto !important;
+    -webkit-box-orient: vertical !important;
+    -webkit-box-direction: normal !important;
+        -ms-flex-direction: column !important;
+            flex-direction: column !important;
+    grid-gap: 120px !important;
   }
 }
 @media (max-width: 590px) {
   .sectionTwo__buttonsContainer {
-    grid-gap: 90px;
-    margin: 120px auto 0 auto;
+    grid-gap: 90px !important;
+    margin: 120px auto 0 auto !important;
   }
 }
 
@@ -239,12 +239,12 @@ body {
 }
 @media (max-width: 590px) {
   .sectionTwo__buttonsContainer__leftButtons {
-    grid-gap: 35px;
+    grid-gap: 35px !important;
   }
 }
 @media (max-width: 440px) {
   .sectionTwo__buttonsContainer__leftButtons {
-    grid-gap: 15px;
+    grid-gap: 15px !important;
   }
 }
 
@@ -259,12 +259,12 @@ body {
 }
 @media (max-width: 590px) {
   .sectionTwo__buttonsContainer__rightButtons {
-    grid-gap: 35px;
+    grid-gap: 35px !important;
   }
 }
 @media (max-width: 440px) {
   .sectionTwo__buttonsContainer__rightButtons {
-    grid-gap: 15px;
+    grid-gap: 15px !important;
   }
 }
 
@@ -274,7 +274,7 @@ body {
 }
 @media (max-width: 1020px) {
   .sectionThree {
-    margin-top: 350px;
+    margin-top: 350px !important;
   }
 }
 
@@ -299,18 +299,18 @@ body {
 }
 @media (max-width: 1020px) {
   .sectionThree__buttonsContainer {
-    margin: 180px auto 0 auto;
+    margin: 180px auto 0 auto !important;
   }
 }
 @media (max-width: 590px) {
   .sectionThree__buttonsContainer {
-    margin: 120px auto 0 auto;
-    grid-gap: 35px;
+    margin: 120px auto 0 auto !important;
+    grid-gap: 35px !important;
   }
 }
 @media (max-width: 440px) {
   .sectionThree__buttonsContainer {
-    grid-gap: 15px;
+    grid-gap: 15px !important;
   }
 }
 
