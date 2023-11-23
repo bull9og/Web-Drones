@@ -124,16 +124,16 @@ body {
 	align-items: center;
 	justify-content: space-between;
 	@media (max-width: 1270px) {
-		width: 100%;
+		width: 100% !important;
 	}
 	@media (max-width: 1020px) {
-		margin: 180px auto 0 auto;
-		flex-direction: column;
-		grid-gap: 120px;
+		margin: 180px auto 0 auto !important;
+		flex-direction: column !important;
+		grid-gap: 120px !important;
 	}
 	@media (max-width: 590px) {
-		grid-gap: 90px;
-		margin: 120px auto 0 auto;
+		grid-gap: 90px !important;
+		margin: 120px auto 0 auto !important;
 	}
 }
 .sectionTwo__buttonsContainer__leftButtons {
@@ -141,10 +141,10 @@ body {
 	grid-template-columns: 1fr 1fr 1fr;
 	grid-gap: 50px;
 	@media (max-width: 590px) {
-		grid-gap: 35px;
+		grid-gap: 35px !important;
 	}
 	@media (max-width: 440px) {
-		grid-gap: 15px;
+		grid-gap: 15px !important;
 	}
 }
 .sectionTwo__buttonsContainer__leftButtons_Button {
@@ -153,10 +153,10 @@ body {
 	display: flex;
 	flex-direction: column;
 	@media (max-width: 590px) {
-		grid-gap: 35px;
+		grid-gap: 35px !important;
 	}
 	@media (max-width: 440px) {
-		grid-gap: 15px;
+		grid-gap: 15px !important;
 	}
 }
 .sectionTwo__buttonsContainer__rightButtons_Button {
@@ -170,12 +170,11 @@ body {
 	width: 100%;
 	margin-top: 500px;
 	@media (max-width: 1020px) {
-		margin-top: 350px;
+		margin-top: 350px !important;
 	}
 }
 .sectionThree-container {
 	flex-direction: column;
-
 }
 .sectionThree__titleH4 {
 	border-bottom: #363636 1px solid;
@@ -186,14 +185,14 @@ body {
 	display: flex;
 	gap: 50px;
 	@media (max-width: 1020px) {
-		margin: 180px auto 0 auto;
+		margin: 180px auto 0 auto !important;
 	}
 	@media (max-width: 590px) {
-		margin: 120px auto 0 auto;
-		grid-gap: 35px;
+		margin: 120px auto 0 auto !important;
+		grid-gap: 35px !important;
 	}
 	@media (max-width: 440px) {
-		grid-gap: 15px;
+		grid-gap: 15px !important;
 	}
 }
 .sectionThree__buttonsContainer_button {
