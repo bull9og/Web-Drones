@@ -312,6 +312,40 @@ img {
   -webkit-transition: 700ms;
   transition: 700ms;
 }
+@media (max-width: 1020px) {
+  [class*=_Button] {
+    font-size: 65px;
+  }
+}
+@media (max-width: 1020px) {
+  [class*=_Button] {
+    font-size: 65px;
+    border: #ADFF00 solid 4px;
+  }
+}
+@media (max-width: 835px) {
+  [class*=_Button] {
+    padding: 5px 15px;
+    font-size: 45px;
+    min-width: 75px;
+    min-height: 75px;
+  }
+}
+@media (max-width: 590px) {
+  [class*=_Button] {
+    font-size: 30px;
+  }
+}
+@media (max-width: 440px) {
+  [class*=_Button] {
+    font-size: 25px;
+    padding: 2px 10px;
+    min-width: 55px;
+    min-height: 55px;
+    border: #ADFF00 solid 2px;
+    border-radius: 10px;
+  }
+}
 [class*=_Button]:hover {
   -webkit-transition: 300ms;
   transition: 300ms;
