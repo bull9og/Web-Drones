@@ -126,7 +126,8 @@ body {
 	align-items: center;
 	justify-content: space-between;
 	@media (max-width: 1270px) {
-		width: 100% !important;
+		width: auto !important;
+		grid-gap: 120px !important;
 	}
 	@media (max-width: 1020px) {
 		margin: 180px auto 0 auto !important;

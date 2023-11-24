@@ -315,11 +315,6 @@ img {
 @media (max-width: 1020px) {
   [class*=_Button] {
     font-size: 65px !important;
-  }
-}
-@media (max-width: 1020px) {
-  [class*=_Button] {
-    font-size: 65px !important;
     border: #ADFF00 solid 4px !important;
   }
 }

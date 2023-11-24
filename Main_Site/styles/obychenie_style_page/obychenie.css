@@ -214,7 +214,8 @@ body {
 }
 @media (max-width: 1270px) {
   .sectionTwo__buttonsContainer {
-    width: 100% !important;
+    width: auto !important;
+    grid-gap: 120px !important;
   }
 }
 @media (max-width: 1020px) {
