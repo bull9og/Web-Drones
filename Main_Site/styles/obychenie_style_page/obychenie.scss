@@ -59,6 +59,8 @@ body {
 	}
 	@media (max-width: 440px) {
 		max-width: 200px !important;
+		margin-bottom: 40px !important;
+		padding: 0 !important;
 	}
 }
 .sectionOne__information_titleH1-green {
@@ -152,6 +154,7 @@ body {
 .sectionTwo__buttonsContainer__rightButtons {
 	display: flex;
 	flex-direction: column;
+	grid-gap: 50px;
 	@media (max-width: 590px) {
 		grid-gap: 35px !important;
 	}

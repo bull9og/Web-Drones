@@ -93,6 +93,8 @@ body {
 @media (max-width: 440px) {
   .sectionOne__information_img {
     max-width: 200px !important;
+    margin-bottom: 40px !important;
+    padding: 0 !important;
   }
 }
 
@@ -256,6 +258,7 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  grid-gap: 50px;
 }
 @media (max-width: 590px) {
   .sectionTwo__buttonsContainer__rightButtons {
