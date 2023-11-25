@@ -19,6 +19,9 @@ main {
 	margin-top: -70px;
 }
 .sectionOne-container {
+	@media (max-width: 480px) {
+		padding: 0 !important;
+	}
 }
 .sectionOne__formContainer {
 	border-radius: 10px;
@@ -26,9 +29,20 @@ main {
 	padding: 80px 120px;
 	text-align: center;
 	border-radius: 10px;
+	@media (max-width: 750px) {
+		border: none !important;
+		padding: 80px 0 !important;
+	}
+	
 }
 .sectionOne__formContainer__titleH3 {
 	margin-bottom: 100px;
+	@media (max-width: 950px) {
+		margin-bottom: 80px !important;
+	}
+	@media (max-width: 850px) {
+		margin-bottom: 70px !important;
+	}
 }
 .form__items {
 	display: flex;
@@ -49,6 +63,19 @@ main {
 	border: 2px solid #363636;
 	padding: 15px 32px;
 	margin-bottom: 50px;
+	@media (max-width: 958px) {
+		padding: 15px 0 15px 32px !important;
+		font-size: 18px !important;
+		margin-bottom: 40px !important;
+	}
+	@media (max-width: 860px) {
+		padding: 12px 0 12px 20px !important;
+		font-size: 16px !important;
+		margin-bottom: 40px !important;
+	}
+	@media (max-width: 440px) {
+		font-size: 14px !important;
+	}
 	&::placeholder {
 		color: #363636;
 		font-family: 'Montserrat';
@@ -56,12 +83,28 @@ main {
 		font-weight: 700;
 		line-height: normal;
 		text-transform: none;
+		@media (max-width: 860px) {
+			font-size: 16px !important;
+		}
+		@media (max-width: 550px) {
+			font-size: 14px !important;
+			font-weight: normal !important;
+		}
 	}
 	&:focus {
 		border: 2px solid #ADFF00;
 	}
 	&:last-child {
 		margin-bottom: 115px;
+	}
+	@media (max-width: 1200px) {
+		max-width: 400px !important;
+	}
+	@media (max-width: 930px) {
+		max-width: 350px !important;
+	}
+	@media (max-width: 400px) {
+		max-width: 300px !important;
 	}
 }
 ._error {
@@ -80,6 +123,11 @@ main {
 	background-color: transparent;
 	border: 2px solid #ADFF00;
 	transition: 400ms;
+	@media (max-width: 765px) {
+		font-size: 14px !important;
+		font-weight: 600 !important;
+		padding: 13px 60px !important;
+	}
 	&:hover {
 		transition: 400ms;
 		color: #1E1E1E;
@@ -95,6 +143,13 @@ main {
 	font-style: normal;
 	font-weight: 700;
 	line-height: normal;
+	@media (max-width: 1200px) {
+		font-size: 12px !important;
+	}
+	@media (max-width: 440px) {
+		display: flex !important;
+		flex-direction: column !important;
+	}
 	a {
 		color: #ADFF00;
 	}

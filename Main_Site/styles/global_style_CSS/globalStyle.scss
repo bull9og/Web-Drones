@@ -37,7 +37,7 @@ img {
 	display: flex;
 	padding: 0 45px;
 	@media (max-width: 590px) {
-		padding: auto 30px !important;
+		padding: 0 30px !important;
 	}
 }
 [class*='header-link'] {
@@ -284,6 +284,7 @@ img {
 //*                 @media (max-width: 800px)
 //*                 @media (max-width: 765px)
 //*                 @media (max-width: 590px)
+//*                 @media (max-width: 465px)
 //*                 @media (max-width: 440px)
 
 //? ----------------- GLOBAL-CSS @ MEDIA END ----------------- ?//
