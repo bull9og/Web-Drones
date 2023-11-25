@@ -64,11 +64,15 @@
 }
 @media (max-width: 590px) {
   .sectionOne__information_img {
-    width: 100% !important;
     -webkit-box-ordinal-group: 2 !important;
         -ms-flex-order: 1 !important;
             order: 1 !important;
     padding: 0 0 60px 0 !important;
+  }
+}
+@media (max-width: 440px) {
+  .sectionOne__information_img {
+    max-width: 310px !important;
   }
 }
 

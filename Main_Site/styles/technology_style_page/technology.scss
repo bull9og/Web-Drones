@@ -41,9 +41,11 @@
 		}
 	}
 	@media (max-width: 590px) {
-		width: 100% !important;
 		order: 1 !important;
 		padding: 0 0 60px 0 !important;
+	}
+	@media (max-width: 440px) {
+		max-width: 310px !important;
 	}
 }
 .sectionOne__information_titleH1-green {

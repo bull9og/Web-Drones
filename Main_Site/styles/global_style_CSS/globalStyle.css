@@ -40,6 +40,11 @@ img {
   display: flex;
   padding: 0 45px;
 }
+@media (max-width: 590px) {
+  [class*=-container] {
+    padding: auto 30px !important;
+  }
+}
 
 [class*=header-link] {
   color: #FFFFFF;

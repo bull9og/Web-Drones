@@ -10,8 +10,8 @@
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  padding-bottom: 110px;
   padding-top: 60px;
+  padding-bottom: 110px;
   border-top: 1px solid #363636;
 }
 @media (max-width: 1020px) {
