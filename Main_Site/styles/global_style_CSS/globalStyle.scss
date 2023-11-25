@@ -5,6 +5,19 @@ body {
 	user-select: none; //?запрет на копирование
 	display: flex;
 	flex-direction: column;
+	&::-webkit-scrollbar {
+		width: 10px;
+	}
+	&::-webkit-scrollbar-track {
+		background: none;
+	}
+	&::-webkit-scrollbar-button {
+		display: none;
+	}
+	&::-webkit-scrollbar-thumb {
+		background-color: #ADFF00;
+		border-radius: 5px;
+	}
 	&.lockScroll {
 		overflow: hidden;
 	}
@@ -200,7 +213,7 @@ img {
 		opacity: 1;
 		transform: translate(0, 0);
 		transition: all 850ms ease-out;
-		transition-delay: 250ms;
+		transition-delay: 100ms;
 	}
 }
 .anim-items-left {
@@ -210,7 +223,7 @@ img {
 		opacity: 1;
 		transform: translate(0, 0);
 		transition: all 850ms ease-out;
-		transition-delay: 250ms;
+		transition-delay: 100ms;
 	}
 }
 [class*='_Button'] {

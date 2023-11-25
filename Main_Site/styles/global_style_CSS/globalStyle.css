@@ -13,6 +13,19 @@ body {
       -ms-flex-direction: column;
           flex-direction: column;
 }
+body::-webkit-scrollbar {
+  width: 10px;
+}
+body::-webkit-scrollbar-track {
+  background: none;
+}
+body::-webkit-scrollbar-button {
+  display: none;
+}
+body::-webkit-scrollbar-thumb {
+  background-color: #ADFF00;
+  border-radius: 5px;
+}
 body.lockScroll {
   overflow: hidden;
 }
@@ -279,8 +292,8 @@ img {
           transform: translate(0, 0);
   -webkit-transition: all 850ms ease-out;
   transition: all 850ms ease-out;
-  -webkit-transition-delay: 250ms;
-          transition-delay: 250ms;
+  -webkit-transition-delay: 100ms;
+          transition-delay: 100ms;
 }
 
 .anim-items-left {
@@ -296,8 +309,8 @@ img {
           transform: translate(0, 0);
   -webkit-transition: all 850ms ease-out;
   transition: all 850ms ease-out;
-  -webkit-transition-delay: 250ms;
-          transition-delay: 250ms;
+  -webkit-transition-delay: 100ms;
+          transition-delay: 100ms;
 }
 
 [class*=_Button] {
