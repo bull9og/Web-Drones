@@ -42,7 +42,7 @@ body {
 }
 @media (max-width: 590px) {
   .sectionOne__information {
-    text-align: center;
+    text-align: center !important;
   }
 }
 
@@ -69,32 +69,32 @@ body {
 }
 @media (max-width: 1790px) {
   .sectionOne__information_img {
-    width: 550px;
+    width: 550px !important;
   }
 }
 @media (max-width: 1440px) {
   .sectionOne__information_img {
-    width: 450px;
+    width: 450px !important;
   }
 }
 @media (max-width: 835px) {
   .sectionOne__information_img {
-    width: 350px;
+    width: 350px !important;
   }
 }
 @media (max-width: 590px) {
   .sectionOne__information_img {
-    max-width: 300px;
-    -webkit-box-ordinal-group: 2;
-        -ms-flex-order: 1;
-            order: 1;
+    max-width: 300px !important;
+    -webkit-box-ordinal-group: 2 !important;
+        -ms-flex-order: 1 !important;
+            order: 1 !important;
   }
 }
 @media (max-width: 440px) {
   .sectionOne__information_img {
-    max-width: 200px;
-    margin-bottom: 40px;
-    padding: 0;
+    max-width: 200px !important;
+    margin-bottom: 40px !important;
+    padding: 0 !important;
   }
 }
 
@@ -128,15 +128,15 @@ body {
 }
 @media (max-width: 590px) {
   .sectionOne__information_titleH1-green {
-    width: 350px;
-    -webkit-box-ordinal-group: 3;
-        -ms-flex-order: 2;
-            order: 2;
+    width: 350px !important;
+    -webkit-box-ordinal-group: 3 !important;
+        -ms-flex-order: 2 !important;
+            order: 2 !important;
   }
 }
 @media (max-width: 440px) {
   .sectionOne__information_titleH1-green {
-    max-width: 100%;
+    max-width: 100% !important;
   }
 }
 
@@ -170,15 +170,15 @@ body {
 }
 @media (max-width: 590px) {
   .sectionOne__information_titleH1-white {
-    width: 350px;
-    -webkit-box-ordinal-group: 4;
-        -ms-flex-order: 3;
-            order: 3;
+    width: 350px !important;
+    -webkit-box-ordinal-group: 4 !important;
+        -ms-flex-order: 3 !important;
+            order: 3 !important;
   }
 }
 @media (max-width: 440px) {
   .sectionOne__information_titleH1-white {
-    max-width: 100%;
+    max-width: 100% !important;
   }
 }
 
@@ -214,24 +214,24 @@ body {
 }
 @media (max-width: 1270px) {
   .sectionTwo__buttonsContainer {
-    width: auto;
-    grid-gap: 120px;
+    width: auto !important;
+    grid-gap: 120px !important;
   }
 }
 @media (max-width: 1020px) {
   .sectionTwo__buttonsContainer {
-    margin: 180px auto 0 auto;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    grid-gap: 120px;
+    margin: 180px auto 0 auto !important;
+    -webkit-box-orient: vertical !important;
+    -webkit-box-direction: normal !important;
+        -ms-flex-direction: column !important;
+            flex-direction: column !important;
+    grid-gap: 120px !important;
   }
 }
 @media (max-width: 590px) {
   .sectionTwo__buttonsContainer {
-    grid-gap: 90px;
-    margin: 120px auto 0 auto;
+    grid-gap: 90px !important;
+    margin: 120px auto 0 auto !important;
   }
 }
 
@@ -242,12 +242,12 @@ body {
 }
 @media (max-width: 590px) {
   .sectionTwo__buttonsContainer__leftButtons {
-    grid-gap: 35px;
+    grid-gap: 35px !important;
   }
 }
 @media (max-width: 440px) {
   .sectionTwo__buttonsContainer__leftButtons {
-    grid-gap: 15px;
+    grid-gap: 15px !important;
   }
 }
 
@@ -263,12 +263,12 @@ body {
 }
 @media (max-width: 590px) {
   .sectionTwo__buttonsContainer__rightButtons {
-    grid-gap: 35px;
+    grid-gap: 35px !important;
   }
 }
 @media (max-width: 440px) {
   .sectionTwo__buttonsContainer__rightButtons {
-    grid-gap: 15px;
+    grid-gap: 15px !important;
   }
 }
 
@@ -303,18 +303,18 @@ body {
 }
 @media (max-width: 1020px) {
   .sectionThree__buttonsContainer {
-    margin: 180px auto 0 auto;
+    margin: 180px auto 0 auto !important;
   }
 }
 @media (max-width: 590px) {
   .sectionThree__buttonsContainer {
-    margin: 120px auto 0 auto;
-    grid-gap: 35px;
+    margin: 120px auto 0 auto !important;
+    grid-gap: 35px !important;
   }
 }
 @media (max-width: 440px) {
   .sectionThree__buttonsContainer {
-    grid-gap: 15px;
+    grid-gap: 15px !important;
   }
 }
 
@@ -324,7 +324,7 @@ body {
 }
 @media (max-width: 1790px) {
   .sectionFour {
-    margin-top: 300px;
+    margin-top: 300px !important;
   }
 }
 
@@ -359,37 +359,37 @@ body {
 }
 @media (max-width: 1790px) {
   .sectionFour__title {
-    font-size: 66px;
+    font-size: 66px !important;
   }
   .sectionFour__title span {
-    font-size: 66px;
+    font-size: 66px !important;
   }
 }
 @media (max-width: 835px) {
   .sectionFour__title {
-    font-size: 46px;
+    font-size: 46px !important;
   }
   .sectionFour__title span {
-    font-size: 46px;
-    -webkit-text-stroke: #ADFF00 1px;
+    font-size: 46px !important;
+    -webkit-text-stroke: #ADFF00 1px !important;
   }
 }
 @media (max-width: 590px) {
   .sectionFour__title {
-    font-size: 32px;
+    font-size: 32px !important;
   }
   .sectionFour__title span {
-    font-size: 32px;
-    -webkit-text-stroke: #ADFF00 1px;
+    font-size: 32px !important;
+    -webkit-text-stroke: #ADFF00 1px !important;
   }
 }
 @media (max-width: 440px) {
   .sectionFour__title {
-    font-size: 26px;
+    font-size: 26px !important;
   }
   .sectionFour__title span {
-    font-size: 26px;
-    -webkit-text-stroke: #ADFF00 0.5px;
+    font-size: 26px !important;
+    -webkit-text-stroke: #ADFF00 0.5px !important;
   }
 }
 
@@ -404,7 +404,7 @@ body {
 }
 @media (max-width: 1790px) {
   .sectionFour__link {
-    margin-top: 120px;
+    margin-top: 120px !important;
   }
 }
 
@@ -421,7 +421,7 @@ body {
 }
 @media (max-width: 1790px) {
   .sectionFour__link_imgs svg {
-    width: 120px;
+    width: 120px !important;
   }
 }
 .sectionFour__link_imgs svg:nth-child(2) {
@@ -452,13 +452,13 @@ body {
 }
 @media (max-width: 1790px) {
   .sectionFour__link_imgs svg:nth-child(2) {
-    top: -71px;
-    left: -45px;
-    width: 90px;
+    top: -71px !important;
+    left: -45px !important;
+    width: 90px !important;
   }
 }
 @media (max-width: 1790px) {
   .sectionFour__link_imgs svg:nth-child(3) {
-    width: 26px;
+    width: 26px !important;
   }
 }
