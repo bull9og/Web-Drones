@@ -20,14 +20,17 @@
         // Продолжайте проверку учетных данных и вход в профиль
     }
 
+    // Хэширование пароля
+    $hashedPassword = hash('sha256', $password);
+
     // Выполнить запрос к базе данных, чтобы найти пользователя
-    $query = "SELECT * FROM Users_Registrations WHERE email = '$email' AND password = '$password'";
+    $query = "SELECT * FROM Users_Registrations WHERE email = '$email' AND hashe_password = '$hashedPassword'";
     $result = $conn -> query($query);
 
     // Проверить, найден ли пользователь
     if ($result->num_rows > 0) {
         // Пользователь найден, установить переменную сессии
-        $_SESSION['user_id'] = $email;     
+        $_SESSION['id'] = $name;     
         // Перенаправить пользователя на страницу профиля
         header('Location: ../index.html');
         exit;

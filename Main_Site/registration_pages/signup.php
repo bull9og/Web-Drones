@@ -5,25 +5,26 @@
     $password = "d91pcZj6";
     $dbname = "cp41333_register";
 
-    // Create a connection
+    // Создание подключения
     $conn = new mysqli($servername, $username, $password, $dbname);
 
-    // Check the connection
+    // Проверка подключения
     if ($conn->connect_error) {
         die("Connection failed: " . $conn->connect_error);
     }
 
-    // Retrieve the form data and perform necessary validation
+    // Получение данных формы и выполнение необходимой проверки
     $name = $_POST['name'];
     $email = $_POST['email'];
-    $password = $_POST['password'];
+    $passWord = $_POST['password'];
+    $hashedPassword = $_POST['hashe_password'];
 
 
-    $query = "SELECT * FROM Users_Registrations WHERE email = '$email' AND password = '$password'";
+    $query = "SELECT * FROM Users_Registrations WHERE email = '$email' AND password = '$passWord'";
     $result = $conn->query($query);
 
-    // Validate the form inputs (e.g. check for empty fields, validate email format, etc.)
-    if (empty($name) || empty($email) || empty($password)) {
+    // Проверка валидации инпутов
+    if (empty($name) || empty($email) || empty($passWord)) {
         $message = "Заполните все обязательные поля!"; // Ваше сообщение
         $url = "sign_up.html"; // URL другой страницы
         $jsCode = "alert('$message'); window.location.href = '$url';";
@@ -42,25 +43,31 @@
         // Вывод сгенерированного кода JavaScript
         echo "<script>{$jsCode}</script>";
     } else {
-        // Sanitize the form inputs before inserting into the database
+
+        // Хэширование пароля
+        $hashedPassword = hash('sha256', $passWord);
+
+        // Очистка входных данных формы перед вставкой в базу данных
         $name = mysqli_real_escape_string($conn, $name);
         $email = mysqli_real_escape_string($conn, $email);
-        $password = mysqli_real_escape_string($conn, $password);
+        $passWord = mysqli_real_escape_string($conn, $passWord);
 
-        // Execute the query to insert data into the database
-        $query = "INSERT INTO Users_Registrations (name, email, password) VALUES ('$name', '$email', '$password')";
+        // Выполнение запроса для вставки данных в базу данных
+        $query = "INSERT INTO Users_Registrations (name, email, hashe_password) VALUES ('$name', '$email', '$hashedPassword')";
         $result = mysqli_query($conn, $query);
 
-        // Check if the query was successful
+        // Проверить, был ли запрос успешным
         if ($result) {
-            // Redirect to the main page after successful insertion
+            // Редирект на главную страницу после успешной вставки
             header("Location: ../index.html");
             exit();
         } else {
-            echo "Error while inserting data into the database: " . mysqli_error($conn);
+            $message = "Ошибка при подключении к базе данных!"; // Ваше сообщение
+            $url = "sign_up.html"; // URL другой страницы
+            $jsCode = "alert('$message'); window.location.href = '$url';";
         }
     }
 
-    // Close the connection
+    // Закрытие соединения
     $conn->close();
 ?>
