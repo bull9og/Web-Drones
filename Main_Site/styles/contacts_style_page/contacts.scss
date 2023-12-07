@@ -342,18 +342,20 @@
 	background-color: transparent;
 	border-radius: 10px;
 	border: 2px solid #363636;
-	padding: 15px 32px;
+	padding: 15px 32px 18px 32px;
 	margin-bottom: 90px;
 	min-width: 550px;
 	max-width: 550px;
-	max-height: 650px;
-	min-height: 250px;
 	color: #fff;
 	font-family: 'Montserrat';
 	font-size: 20px;
 	font-weight: 700;
 	line-height: normal;
 	text-transform: none;
+	resize: none;
+    &.auto {
+        overflow-y: hidden;
+    }
 	@media (max-width: 765px) {
 		font-size: 18px !important;
 		font-weight: 600 !important;
@@ -369,8 +371,6 @@
 	@media (max-width: 465px) {
 		max-width: 280px !important;
 		min-width: 280px !important;
-		max-height: 450px !important;
-		min-height: 150px !important;
 	}
 	&:focus {
 		border: 2px solid #ADFF00;
@@ -413,20 +413,3 @@
 	}
 }
 //* ----------------- SECTION_TWO-CSS END ----------------- *//
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

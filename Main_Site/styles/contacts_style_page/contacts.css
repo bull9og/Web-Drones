@@ -536,18 +536,20 @@
   background-color: transparent;
   border-radius: 10px;
   border: 2px solid #363636;
-  padding: 15px 32px;
+  padding: 15px 32px 18px 32px;
   margin-bottom: 90px;
   min-width: 550px;
   max-width: 550px;
-  max-height: 650px;
-  min-height: 250px;
   color: #fff;
   font-family: "Montserrat";
   font-size: 20px;
   font-weight: 700;
   line-height: normal;
   text-transform: none;
+  resize: none;
+}
+.form_textarea.auto {
+  overflow-y: hidden;
 }
 @media (max-width: 765px) {
   .form_textarea {
@@ -569,8 +571,6 @@
   .form_textarea {
     max-width: 280px !important;
     min-width: 280px !important;
-    max-height: 450px !important;
-    min-height: 150px !important;
   }
 }
 .form_textarea:focus {

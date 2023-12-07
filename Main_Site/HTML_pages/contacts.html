@@ -77,7 +77,7 @@
                 	<h2 class="sectionTwo__formContainer__titleH3" style="color: #FFF;">Задать вопрос</h2>
                     <div class="form__items">
                         <input name="email" placeholder="Почта:" id="form_item" type="email" class="form_input _req _email" >
-						<textarea name="message" id="form_item" cols="30" rows="10" placeholder='Ваш вопрос:' class="form_textarea _req"></textarea>
+						<textarea rows="1" name="message" id="form_item" cols="30" rows="10" placeholder='Ваш вопрос:' class="form_textarea _req"></textarea>
                     </div>
                     <button type="submit" class="sectionTwo__formContainer__button">Отправить</button>
             	</form>
@@ -129,7 +129,18 @@
 	</footer>
 	<!----------------- FOOTER END ----------------->
 
-
+	<!----------------- SCRIPT START ----------------->
+	<script>
+		document.querySelectorAll('textarea').forEach(el => {
+			el.style.height = el.setAttribute('style', 'height: ' + el.scrollHeight + 'px');
+			el.classList.add('auto');
+			el.addEventListener('input', e => {
+				el.style.height = 'auto';
+				el.style.height = (el.scrollHeight) + 'px';
+			});
+		});
+	</script>
+	<!----------------- SCRIPT END ----------------->
 
 </body>
 </html>
