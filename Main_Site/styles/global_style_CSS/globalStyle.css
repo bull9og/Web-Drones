@@ -1,3 +1,7 @@
+html {
+  cursor: none;
+}
+
 body {
   background-color: #1E1E1E;
   min-height: 100%;
@@ -33,6 +37,52 @@ body.lockScroll {
   body {
     margin-top: 8vh !important;
   }
+}
+body a {
+  cursor: none;
+}
+
+.cursor {
+  position: fixed;
+  top: 0;
+  left: 0;
+  font-size: 5rem;
+  pointer-events: none;
+  display: grid;
+  grid-template-areas: "layer";
+  place-items: center;
+  --color: #FFF;
+  z-index: 999;
+  mix-blend-mode: difference;
+  -webkit-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+.cursor * {
+  grid-area: layer;
+}
+.cursor * {
+  will-change: transform;
+}
+
+.cursor-outer {
+  width: 0.8em;
+  height: 0.8em;
+  border: solid 2px var(--color);
+  border-radius: 50%;
+  -webkit-transform: translate(calc(var(--lag-x) * 1px), calc(var(--lag-y) * 1px));
+      -ms-transform: translate(calc(var(--lag-x) * 1px), calc(var(--lag-y) * 1px));
+          transform: translate(calc(var(--lag-x) * 1px), calc(var(--lag-y) * 1px));
+}
+
+.cursor-inner {
+  width: 0.5em;
+  height: 0.5em;
+  background: var(--color);
+  border-radius: 50%;
+  -webkit-transform: translate(calc(var(--x) * 1px), calc(var(--y) * 1px)) scale(var(--lag-scale));
+      -ms-transform: translate(calc(var(--x) * 1px), calc(var(--y) * 1px)) scale(var(--lag-scale));
+          transform: translate(calc(var(--x) * 1px), calc(var(--y) * 1px)) scale(var(--lag-scale));
 }
 
 main {

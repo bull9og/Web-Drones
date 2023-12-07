@@ -7,7 +7,7 @@ a:focus,a:active {outline: none;}
 nav,footer,header,aside {display: block;}
 input,button,textarea {font-family: inherit;}
 input::-ms-clear {display: none;}
-button {cursor: pointer;}
+button {cursor: none;}
 button::-moz-focus-inner {padding: 0; border: 0;}
 a,a:visited {text-decoration: none;}
 a:hover {text-decoration: none;}
