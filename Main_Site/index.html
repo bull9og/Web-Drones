@@ -12,6 +12,7 @@
 	<script src="javascript/pointer.js" defer></script>
 	<script src="jacascript/typing.js" defer></script>
 	<script src="javascript/textAnimation.js" defer></script>
+	<script src="javascript/neoncursor.js" defer></script>
 	<title>WEB-DRONES / Управление дронами /</title>
 	<meta name="yandex-verification" content="02b74c1d5b658e25" />
 	<meta name="description" content=" Управление, обучение и настройка дронов. Работа с дронами через ваш компьютер, ноутбук и телефон! Поможем вам с освоением. Полностью бесплатно!">
@@ -27,9 +28,10 @@
 	<meta property="og:locale" content="ru">
 </head>
 
+
 <body>
 
-
+	
 
 	<!----------------- HEADER START ----------------->
 	<header class="header">
@@ -41,11 +43,13 @@
 				<li class="header__MainMenu_link"><a href="HTML_pages/obychenie.html" class="header-link">Обучение</a></li>
 				<li class="header__MainMenu_link"><a href="HTML_pages/contacts.html" class="header-link">Контакты</a></li>
 			</ul>
+			<!-- 
 			<ul class="header__SecondMenu" id="login-form">
 				<li class="header__SecondMenu_link"><a href="registration_pages/sign_in.html" class="header-link">Вход</a></li>
 				<li class="header__SecondMenu_link">/</li>
 				<li class="header__SecondMenu_link"><a href="registration_pages/sign_up.html" class="header-link">Регистрация</a></li>
 			</ul>
+			 -->
 		</nav>
 	</header>
 	<!----------------- HEADER END ----------------->
@@ -56,16 +60,17 @@
 	</div>
 
 	<!----------------- MAIN START ----------------->
+	
 	<main class="main">
-		<section class="sectionOne">
-			<div class="sectionOne-container">
-				<div class="sectionOne__information">
-					<h1 class="sectionOne__information_titleH1-green">ВРЕМЯ</h1>
-					<img src="img_source/sectionOne-drone.png" alt="Drone" class="sectionOne__information_img">
-					<h1 class="sectionOne__information_titleH1-white">ПОЛЕТАТЬ</h1>
+			<section class="sectionOne" >
+				<div class="sectionOne-container">
+					<div class="sectionOne__information">
+						<h1 class="sectionOne__information_titleH1-green">ВРЕМЯ</h1>
+						<img src="img_source/sectionOne-drone.png" alt="Drone" class="sectionOne__information_img">
+						<h1 class="sectionOne__information_titleH1-white">ПОЛЕТАТЬ</h1>
+					</div>
 				</div>
-			</div>
-		</section>
+			</section>
 		<section class="sectionTwo">
 			<div class="sectionTwo__runStrokeContainer">
 				<marquee behavior="scroll" direction="left" loop="-1" scrollamount="10" class="sectionTwo__runStroke">
@@ -93,11 +98,11 @@
 						<defs>
 							<filter id="threshold">
 								<feColorMatrix in="SourceGraphic"
-										type="matrix"
-										values="1 0 0 0 0
-												0 1 0 0 0
-												0 0 1 0 0
-												0 0 0 255 -140" />
+								type="matrix"
+								values="1 0 0 0 0
+										0 1 0 0 0
+										0 0 1 0 0
+										0 0 0 255 -140" />
 							</filter>
 						</defs>
 					</svg>
@@ -111,7 +116,7 @@
 						<div></div>возможности
 					</h4>
 				</div>
-				<div class="sectionFour__featuresItems ">
+				<div class="sectionFour__featuresItems">
 					<div class="sectionFour__featuresItems_item anim-items-left no-hide">
 						<h2 class="sectionFour__featuresItems_item_titleH2">Управление</h2>
 						<p>Планирование маршрутов, Управление камерой, Запограммированные полеты</p>
@@ -135,20 +140,15 @@
 			<div class="sectionFive-container">
 				<h2 class="sectionFive__title anim-items no-hide">пройди обучение <br><span>и начни полет!</span></h2>
 				<div class="sectionFive__link anim-items no-hide">
-					<a class="sectionFive__link_imgs" href="registration_pages/sign_up.html">
-						<svg width="186" height="186" viewBox="0 0 186 186" fill="none"
-							xmlns="http://www.w3.org/2000/svg">
-							<circle cx="93.0005" cy="93" r="91" stroke="#ADFF00" stroke-width="3" />
-						</svg>
-						<svg width="143" height="143" viewBox="0 0 143 143" fill="none"
-							xmlns="http://www.w3.org/2000/svg">
-							<circle cx="71.5005" cy="71.5" r="69.5" stroke="white" stroke-width="3"
-								stroke-dasharray="6 12 18 24" />
-						</svg>
-						<svg width="42" height="42" viewBox="0 0 42 42" fill="none" xmlns="http://www.w3.org/2000/svg">
-							<path
-								d="M41.5005 3C41.5005 1.61929 40.3812 0.500005 39.0005 0.500003L16.5005 0.500004C15.1198 0.500004 14.0005 1.61929 14.0005 3C14.0005 4.38072 15.1198 5.5 16.5005 5.5H36.5005V25.5C36.5005 26.8807 37.6198 28 39.0005 28C40.3812 28 41.5005 26.8807 41.5005 25.5L41.5005 3ZM3.76826 41.7678L40.7683 4.76777L37.2327 1.23224L0.232721 38.2322L3.76826 41.7678Z"
-								fill="white" />
+					<a href="HTML_pages/obychenie.html" class="link" id="app">
+						<svg viewBox='0 0 200 200' width='200' height='200' xmlns='http://www.w3.org/2000/svg' class="link__svg" aria-labelledby="link1-title link1-desc">
+							<path id="link-circle" class="link__path" d="M 20, 100 a 80,80 0 1,1 160,0 a 80,80 0 1,1 -160,0" stroke="none" fill="none" />
+							<path class="link__arrow" d="M 75 100 L 125 100 L 110 85 M 125 100 L 110 115"  fill="none" />
+							<text class="link__text">
+								<textPath href="#link-circle" stroke="none">
+									Обучение обучение обучение обучение
+								</textPath>
+							</text>
 						</svg>
 					</a>
 				</div>

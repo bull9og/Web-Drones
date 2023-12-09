@@ -31,6 +31,18 @@
 	}
 }
 .sectionOne__informationContainer_titleH1-green {
+	  
+	  @keyframes typing {
+		from {
+		  width: 0
+		}
+	  }
+		  
+	  @keyframes blink {
+		50% {
+		  border-color: transparent
+		}
+	  }
 	margin: 0;
 	@media (max-width: 1790px) {
 		font-size: 140px !important;
@@ -57,6 +69,7 @@
 }
 .sectionOne__informationContainer_titleH1-white {
 	margin: -20px 0;
+	
 	@media (max-width: 1790px) {
 		font-size: 140px !important;
 		margin-top: 0 !important;

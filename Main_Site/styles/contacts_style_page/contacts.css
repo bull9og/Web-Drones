@@ -40,6 +40,26 @@
 .sectionOne__informationContainer_titleH1-green {
   margin: 0;
 }
+@-webkit-keyframes typing {
+  from {
+    width: 0;
+  }
+}
+@keyframes typing {
+  from {
+    width: 0;
+  }
+}
+@-webkit-keyframes blink {
+  50% {
+    border-color: transparent;
+  }
+}
+@keyframes blink {
+  50% {
+    border-color: transparent;
+  }
+}
 @media (max-width: 1790px) {
   .sectionOne__informationContainer_titleH1-green {
     font-size: 140px !important;
