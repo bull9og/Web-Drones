@@ -173,14 +173,14 @@ img {
 }
 
 [class*=_titleH1-green] {
-  text-shadow: 0px 0px 75px rgba(204, 255, 0, 0.15);
+  text-shadow: 0px 0px 75px rgba(204, 255, 0, 0.03);
   font-family: "Rubik";
   font-size: 180px;
   font-style: normal;
   font-weight: 900;
   line-height: normal;
   text-transform: uppercase;
-  color: #1E1E1E;
+  color: transparent;
   -webkit-text-stroke: #ADFF00 3px;
   z-index: -1;
   margin-bottom: -220px;

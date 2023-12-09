@@ -10,6 +10,8 @@
 	<script src="javascript/login.js" defer></script>
 	<script src="javascript/spoiler.js" defer></script>
 	<script src="javascript/pointer.js" defer></script>
+	<script src="jacascript/typing.js" defer></script>
+	<script src="javascript/textAnimation.js" defer></script>
 	<title>WEB-DRONES / Управление дронами /</title>
 	<meta name="yandex-verification" content="02b74c1d5b658e25" />
 	<meta name="description" content=" Управление, обучение и настройка дронов. Работа с дронами через ваш компьютер, ноутбук и телефон! Поможем вам с освоением. Полностью бесплатно!">
@@ -82,7 +84,24 @@
 		</section>
 		<section class="sectionThree">
 			<div class="sectionThree__container">
-				<p class="sectionThree_text anim-items no-hide">Не зависимо от того, являетесь ли вы опытным пилотом дрона или только начинаете осваивать эту технологию, наше приложение предоставит вам все необходимое для комфортного и безопасного управления дроном. <br><br> Вы сможете превратить свои полеты в настоящее приключение и ощутить всю мощь и свободу, которую предоставляют беспилотные аппараты.</p>
+				<div class="sectionFive_textANIMATION anim-items no-hide">
+					<div id="container">
+						<span id="text1"></span>
+						<span id="text2"></span>
+					</div>
+					<svg id="filters">
+						<defs>
+							<filter id="threshold">
+								<feColorMatrix in="SourceGraphic"
+										type="matrix"
+										values="1 0 0 0 0
+												0 1 0 0 0
+												0 0 1 0 0
+												0 0 0 255 -140" />
+							</filter>
+						</defs>
+					</svg>
+				</div>
 			</div>
 		</section>
 		<section class="sectionFour">
@@ -114,7 +133,7 @@
 		</section>
 		<section class="sectionFive">
 			<div class="sectionFive-container">
-				<h2 class="sectionFive__title anim-items no-hide">заРЕГИСТРИРУЙСЯ <br><span>и НАЧНИ полет!</span></h2>
+				<h2 class="sectionFive__title anim-items no-hide">пройди обучение <br><span>и начни полет!</span></h2>
 				<div class="sectionFive__link anim-items no-hide">
 					<a class="sectionFive__link_imgs" href="registration_pages/sign_up.html">
 						<svg width="186" height="186" viewBox="0 0 186 186" fill="none"
@@ -180,7 +199,6 @@
 		</div>
 	</footer>
 	<!----------------- FOOTER END ----------------->
-
 
 </body>
 

@@ -269,10 +269,15 @@
   font-weight: 600;
   line-height: normal;
   line-height: 50px;
-  border: 2px solid #ADFF00;
-  padding: 65px;
-  border-radius: 25px;
   text-wrap: balance;
+  width: 75ch;
+  -webkit-animation: typing 5s steps(150), blink 0.5s step-end infinite alternate;
+          animation: typing 5s steps(150), blink 0.5s step-end infinite alternate;
+  white-space: nowrap;
+  overflow: hidden;
+  border-right: #ADFF00 3px solid;
+  font-family: monospace;
+  font-size: 2.5em;
 }
 @media (max-width: 1790px) {
   .sectionThree_text {
@@ -311,6 +316,27 @@
   }
 }
 
+@-webkit-keyframes typing {
+  from {
+    width: 0;
+  }
+}
+
+@keyframes typing {
+  from {
+    width: 0;
+  }
+}
+@-webkit-keyframes blink {
+  50% {
+    border-color: transparent;
+  }
+}
+@keyframes blink {
+  50% {
+    border-color: transparent;
+  }
+}
 .sectionFour {
   width: 100%;
   margin-top: 400px;
@@ -390,7 +416,7 @@
 
 .sectionFive {
   max-width: 100%;
-  margin-top: 370px;
+  margin-top: 450px;
 }
 @media (max-width: 1790px) {
   .sectionFive {
@@ -407,6 +433,27 @@
   margin: 0 auto;
 }
 
+#container {
+  margin-top: 400px;
+  -webkit-filter: url(#threshold) blur(0.4px);
+          filter: url(#threshold) blur(0.4px);
+}
+
+#text1, #text2 {
+  color: white;
+  position: absolute;
+  width: 100%;
+  display: inline-block;
+  font-family: "Montserrat";
+  font-weight: 900;
+  font-size: 80px;
+  text-align: center;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+
 .sectionFive__title {
   color: #FFF;
   text-align: center;
@@ -418,12 +465,12 @@
   text-transform: uppercase;
 }
 .sectionFive__title span {
-  color: #1E1E1E;
-  text-shadow: 0px 0px 75px rgba(204, 255, 0, 0.2);
+  text-shadow: 0px 0px 75px rgba(204, 255, 0, 0.03);
   font-family: "Rubik";
   font-size: 96px;
   font-weight: 400;
   line-height: normal;
+  color: transparent;
   text-transform: uppercase;
   -webkit-text-stroke: #ADFF00 2px;
 }
@@ -471,6 +518,7 @@
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  margin-bottom: 250px;
 }
 @media (max-width: 1790px) {
   .sectionFive__link {
