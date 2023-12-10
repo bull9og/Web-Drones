@@ -264,7 +264,6 @@
   }
 }
 .sectionFour__items_item_titleH3:hover {
-  cursor: pointer;
   color: #fff;
   -webkit-transition: 350ms;
   transition: 350ms;

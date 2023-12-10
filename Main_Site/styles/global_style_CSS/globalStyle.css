@@ -46,7 +46,7 @@ body a {
   position: fixed;
   top: 0;
   left: 0;
-  font-size: 4.5rem;
+  font-size: 5rem;
   pointer-events: none;
   cursor: none;
   display: grid;
