@@ -60,6 +60,7 @@ a, a:visited {
 
 a:hover {
   text-decoration: none;
+  cursor: none;
 }
 
 ul li {
