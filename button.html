@@ -1,0 +1,101 @@
+<a href="#!" class='button'> начать
+    <span class='button__line button__line--top'></span>
+    <span class='button__line button__line--right'></span>
+    <span class='button__line button__line--bottom'></span>
+    <span class='button__line button__line--left'></span>
+  </a>
+
+  <style>
+     .button {
+    border-radius: 20px;
+    padding: 15px 50px;
+    text-decoration:none;
+    position: relative;
+    color: #ADFF00;
+      font-family: Jost;
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: normal;
+      letter-spacing: 0.4px;
+      text-transform: uppercase;
+    display: inline-block;
+    overflow: hidden;
+    transition: 0.2s;
+  }
+  .button__line {
+  
+    position:absolute;
+    display: block;
+  }
+  
+  .button:hover {
+    border-radius: 38.5px;
+    background-color: #ADFF00;
+    color: #1E1E1E;
+    transition: 0.5s;
+    transition-delay:0.5s;
+    box-shadow: 0px 0px 15px 0px rgba(173, 255, 0, 0.25), 0px 0px 25px 0px rgba(173, 255, 0, 0.25), 0px 0px 40px 0px rgba(173, 255, 0, 0.25);
+  }
+  
+  .button__line--top {
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(90deg, transparent, #ADFF00);
+  }
+  
+  
+  .button:hover .button__line--top {
+    left: 100%;
+    transition: 1s;
+    transition-delay: 0.25s;
+  }
+  
+  .button__line--bottom {
+    bottom: 0;
+    right: -100%;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(270deg, transparent, #ADFF00);
+  }
+  
+  
+  .button:hover .button__line--bottom {
+    right: 100%;
+    transition: 1s;
+    transition-delay: 0.25s;
+  }
+  .button__line--left {
+    bottom: -100%;
+    left: 0;
+    width: 2px;
+    height: 100%;
+    background: linear-gradient(0deg, transparent, #ADFF00);
+  }
+  
+  
+  .button:hover .button__line--left {
+    bottom: 100%;
+    transition: 1s;
+    transition-delay: 0;
+  }
+  
+  .button__line--right {
+    top: -100%;
+    right: 0;
+    width: 2px;
+    height: 100%;
+    background: linear-gradient(180deg, transparent, #ADFF00);
+  }
+  
+  
+  .button:hover .button__line--right {
+    top: 100%;
+    transition: 1s;
+    transition-delay: 0;
+  }
+  </style>
+  
+ 
