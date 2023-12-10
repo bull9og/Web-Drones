@@ -53,6 +53,23 @@ body {
 	@media (max-width: 1000px) {
 		display: none !important;
 	}
+	& .hover-class {
+		.cursor-outer {
+			width: 1.8em;
+			height: 1.8em;
+			border: solid 2px var(--color);
+			border-radius: 50%;
+			transform: translate(calc(var(--lag-x) * 1px), calc(var(--lag-y) * 1px));
+		}
+		.cursor-inner {
+			width: 1.5em;
+			height: 1.5em;
+			background: var(--color);
+			border-radius: 50%;
+			transform: translate(calc(var(--x) * 1px), calc(var(--y) * 1px))
+			  scale(var(--lag-scale));
+		}
+	}
 }
 .cursor-outer {
 	width: 0.8em;

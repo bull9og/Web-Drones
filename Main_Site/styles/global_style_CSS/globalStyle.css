@@ -69,6 +69,24 @@ body a {
     display: none !important;
   }
 }
+.cursor .hover-class .cursor-outer {
+  width: 1.8em;
+  height: 1.8em;
+  border: solid 2px var(--color);
+  border-radius: 50%;
+  -webkit-transform: translate(calc(var(--lag-x) * 1px), calc(var(--lag-y) * 1px));
+      -ms-transform: translate(calc(var(--lag-x) * 1px), calc(var(--lag-y) * 1px));
+          transform: translate(calc(var(--lag-x) * 1px), calc(var(--lag-y) * 1px));
+}
+.cursor .hover-class .cursor-inner {
+  width: 1.5em;
+  height: 1.5em;
+  background: var(--color);
+  border-radius: 50%;
+  -webkit-transform: translate(calc(var(--x) * 1px), calc(var(--y) * 1px)) scale(var(--lag-scale));
+      -ms-transform: translate(calc(var(--x) * 1px), calc(var(--y) * 1px)) scale(var(--lag-scale));
+          transform: translate(calc(var(--x) * 1px), calc(var(--y) * 1px)) scale(var(--lag-scale));
+}
 
 .cursor-outer {
   width: 0.8em;
