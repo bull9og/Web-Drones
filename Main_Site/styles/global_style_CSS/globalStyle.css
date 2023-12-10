@@ -46,7 +46,7 @@ body a {
   position: fixed;
   top: 0;
   left: 0;
-  font-size: 5rem;
+  font-size: 4.5rem;
   pointer-events: none;
   display: grid;
   grid-template-areas: "layer";
@@ -63,6 +63,11 @@ body a {
 }
 .cursor * {
   will-change: transform;
+}
+@media (max-width: 1000px) {
+  .cursor {
+    display: none !important;
+  }
 }
 
 .cursor-outer {

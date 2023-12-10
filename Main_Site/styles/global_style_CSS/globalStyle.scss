@@ -35,7 +35,7 @@ body {
 	position: fixed;
 	top: 0;
 	left: 0;
-	font-size: 5rem;
+	font-size: 4.5rem;
 	pointer-events: none;
 	display: grid;
 	grid-template-areas: "layer";
@@ -46,14 +46,13 @@ body {
 	* {
 	  will-change: transform;
 	}
-  
 	--color: #FFF;
-  
 	z-index: 999;
-  
 	mix-blend-mode: difference;
-  
 	transform: translate(-50%, -50%);
+	@media (max-width: 1000px) {
+		display: none !important;
+	}
 }
 .cursor-outer {
 	width: 0.8em;
