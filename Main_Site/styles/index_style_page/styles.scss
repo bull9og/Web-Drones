@@ -10,7 +10,6 @@
 
 
 
-  
 //* ----------------- SECTION_ONE-CSS START ----------------- *//
 .sectionOne {
 	width: 100%;
@@ -415,6 +414,11 @@
 		stroke: $textColor;
 		stroke-linecap: round;
 		stroke-linejoin: round;
+		transition: 500ms;
+		&:hover {
+			padding: 8px;
+			transition: 500ms;
+		}
 	}
 	&__cloud {
 		transform-origin: 50% 50%;
@@ -427,6 +431,7 @@
 		transform: rotate(-35deg);
 		transform-origin: 50% 50%;
 		transition: transform $hoverDuration / 2 $easeIn;
+	
 
 		.link:hover & {
 			transform: scale(1.3);

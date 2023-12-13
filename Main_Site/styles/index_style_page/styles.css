@@ -558,6 +558,13 @@
   stroke: #fff;
   stroke-linecap: round;
   stroke-linejoin: round;
+  -webkit-transition: 500ms;
+  transition: 500ms;
+}
+.link__svg:hover {
+  padding: 8px;
+  -webkit-transition: 500ms;
+  transition: 500ms;
 }
 .link__cloud {
   -webkit-transform-origin: 50% 50%;
