@@ -119,11 +119,9 @@
 	}
 }
 .sectionTwo__runStroke {
-	display: flex;
-	justify-content: right;
-	@media (max-width: 440px) {
-		justify-content: start !important;
-	}
+	display: inline-block;
+	white-space: nowrap;
+	overflow: hidden;
 	ul {
 		display: flex;
 		align-items: center;

@@ -268,26 +268,6 @@ img {
 		font-weight: 600;
 	}
 }
-.anim-items {
-	opacity: 0;
-	transform: translate(0, 200px);
-	&.show {
-		opacity: 1;
-		transform: translate(0, 0);
-		transition: all 850ms ease-out;
-		transition-delay: 100ms;
-	}
-}
-.anim-items-left {
-	opacity: 0;
-	transform: translate(50px, 200px);
-	&.show {
-		opacity: 1;
-		transform: translate(0, 0);
-		transition: all 850ms ease-out;
-		transition-delay: 100ms;
-	}
-}
 [class*='_Button'] {
 	color: #FFF;
 	text-shadow: 0px -10px 30px rgba(255, 255, 255, 0.15);
@@ -329,6 +309,26 @@ img {
 		color: #1E1E1E;
 		background-color: #ADFF00;
 		box-shadow: 0px 0px 15px 0px rgba(173, 255, 0, 0.60);
+	}
+}
+.anim-items {
+	opacity: 0;
+	transform: translate(0, 200px);
+	&.show {
+		opacity: 1;
+		transform: translate(0, 0);
+		transition: all 850ms ease-out;
+		transition-delay: 100ms;
+	}
+}
+.anim-items-left {
+	opacity: 0;
+	transform: translate(50px, 200px);
+	&.show {
+		opacity: 1;
+		transform: translate(0, 0);
+		transition: all 850ms ease-out;
+		transition-delay: 100ms;
 	}
 }
 [data-shrink],
