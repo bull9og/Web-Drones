@@ -152,41 +152,41 @@
 
 //* ----------------- SECTION_THREE-CSS START ----------------- *//
 .sectionThree {
-	max-width: 100%;
-	margin: 600px 0 450px 0;
+	max-width: 100% !important;
+	margin: 600px 0 450px 0 !important;
 	@media (max-width: 1270px) {
 		margin-top: 300px !important;
 	}
 	video {
-		filter: brightness(0.1);
-		opacity: 0.3;
+		filter: brightness(0.1) !important;
+		opacity: 0.3 !important;
 	}
-	position: relative;
+	position: relative !important;
 }
 .sectionThree__container {
-	width: 90vw;
+	width: 90vw !important;
 	//background-color: #1E1E1E;
-	position: absolute;
-	left: 50%;
-	top: 50%;
-	transform: translate(-50%, -80%);
+	position: absolute !important;
+	left: 50% !important;
+	top: 50% !important;
+	transform: translate(-50%, -80%) !important;
 }
 
 .sectionThree_text {
-	color: #fff ;
-	font-family: 'Montserrat';
-	font-size: 30px;
-	font-weight: 600;
-	line-height: normal;
-	line-height: 50px;
-	text-wrap: balance;
-	width: 75ch;
-	animation: typing 5s steps(150), blink .5s step-end infinite alternate;
-	white-space: nowrap;
-	overflow: hidden;
-	border-right: #ADFF00 3px solid;
-	font-family: monospace;
-	font-size: 2.5em;
+	color: #fff  !important;
+	font-family: 'Montserrat' !important;
+	font-size: 30px !important;
+	font-weight: 600 !important;
+	line-height: normal !important;
+	line-height: 50px !important;
+	text-wrap: balance !important;
+	width: 75ch !important;
+	animation: typing 5s steps(150), blink .5s step-end infinite alternate !important;
+	white-space: nowrap !important;
+	overflow: hidden !important;
+	border-right: #ADFF00 3px solid !important;
+	font-family: monospace !important;
+	font-size: 2.5em !important;
 
 
 	@media (max-width: 1790px) {
@@ -218,12 +218,12 @@
 }
 @keyframes typing {
 	from {
-	  width: 0
+	  width: 0 !important;
 	}
 }  
 @keyframes blink {
 	50% {
-	  border-color: transparent
+	  border-color: transparent !important;
 	}
 }
 //* ----------------- SECTION_THREE-CSS END ----------------- *//
