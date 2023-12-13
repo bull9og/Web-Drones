@@ -238,18 +238,28 @@
 
 .sectionThree {
   max-width: 100%;
-  margin-top: 300px;
+  margin: 600px 0 450px 0;
+  position: relative;
 }
 @media (max-width: 1270px) {
   .sectionThree {
-    margin-top: 200px !important;
+    margin-top: 300px !important;
   }
+}
+.sectionThree video {
+  -webkit-filter: brightness(0.1);
+          filter: brightness(0.1);
+  opacity: 0.3;
 }
 
 .sectionThree__container {
-  max-width: 1400px;
-  margin: 0 auto;
-  background-color: #1E1E1E;
+  width: 90vw;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -80%);
+      -ms-transform: translate(-50%, -80%);
+          transform: translate(-50%, -80%);
 }
 
 .sectionThree_text {
@@ -329,7 +339,6 @@
 }
 .sectionFour {
   width: 100%;
-  margin-top: 400px;
 }
 @media (max-width: 1270px) {
   .sectionFour {

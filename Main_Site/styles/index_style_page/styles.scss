@@ -154,16 +154,25 @@
 //* ----------------- SECTION_THREE-CSS START ----------------- *//
 .sectionThree {
 	max-width: 100%;
-	margin-top: 300px;
+	margin: 600px 0 450px 0;
 	@media (max-width: 1270px) {
-		margin-top: 200px !important;
+		margin-top: 300px !important;
 	}
+	video {
+		filter: brightness(0.1);
+		opacity: 0.3;
+	}
+	position: relative;
 }
 .sectionThree__container {
-	max-width: 1400px;
-	margin: 0 auto;
-	background-color: #1E1E1E;
+	width: 90vw;
+	//background-color: #1E1E1E;
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%, -80%);
 }
+
 .sectionThree_text {
 	color: #fff ;
 	font-family: 'Montserrat';
@@ -225,7 +234,7 @@
 //* ----------------- SECTION_FOUR-CSS START ----------------- *//
 .sectionFour {
 	width: 100%;
-	margin-top: 400px;
+	
 	@media (max-width: 1270px) {
 		margin-top: 300px !important;
 	}
