@@ -37,9 +37,21 @@
     margin-bottom: 100px !important;
   }
 }
+@media (max-width: 590px) {
+  .footer__information {
+    padding-top: 50px;
+  }
+}
 
 .footer__information_titleH4 {
   margin-bottom: 55px;
+}
+@media (max-width: 590px) {
+  .footer__information_titleH4 {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
 }
 
 .footer__information_subTitle {

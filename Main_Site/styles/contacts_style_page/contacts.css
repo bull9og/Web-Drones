@@ -19,6 +19,16 @@
       -ms-flex-pack: justify;
           justify-content: space-between;
 }
+@media (max-width: 440px) {
+  .sectionOne-container {
+    height: 90vh !important;
+  }
+}
+@media (max-height: 650px) {
+  .sectionOne-container {
+    height: 100vh !important;
+  }
+}
 
 .sectionOne__informationContainer {
   margin-right: 100px;
@@ -40,26 +50,6 @@
 .sectionOne__informationContainer_titleH1-green {
   margin: 0;
 }
-@-webkit-keyframes typing {
-  from {
-    width: 0;
-  }
-}
-@keyframes typing {
-  from {
-    width: 0;
-  }
-}
-@-webkit-keyframes blink {
-  50% {
-    border-color: transparent;
-  }
-}
-@keyframes blink {
-  50% {
-    border-color: transparent;
-  }
-}
 @media (max-width: 1790px) {
   .sectionOne__informationContainer_titleH1-green {
     font-size: 140px !important;
@@ -75,7 +65,7 @@
   .sectionOne__informationContainer_titleH1-green {
     font-size: 75px !important;
     -webkit-text-stroke: #ADFF00 2px !important;
-    text-align: center;
+    text-align: center !important;
   }
 }
 @media (max-width: 765px) {
@@ -91,7 +81,7 @@
 }
 @media (max-width: 440px) {
   .sectionOne__informationContainer_titleH1-green {
-    font-size: 40px !important;
+    font-size: 50px !important;
   }
 }
 
@@ -127,7 +117,7 @@
 }
 @media (max-width: 440px) {
   .sectionOne__informationContainer_titleH1-white {
-    font-size: 40px !important;
+    font-size: 50px !important;
   }
 }
 
@@ -150,6 +140,11 @@
   }
   .sectionOne__informationContainer_links svg {
     display: none !important;
+  }
+}
+@media (max-width: 835px) and (max-width: 440px) {
+  .sectionOne__informationContainer_links {
+    margin-top: 60px !important;
   }
 }
 .sectionOne__informationContainer_links a:first-child {
@@ -256,6 +251,13 @@
     font-weight: 600 !important;
   }
 }
+@media (max-width: 440px) {
+  .sectionOne__informationContainer_links a:first-child {
+    font-size: 14px !important;
+    font-weight: 500 !important;
+    border: solid 1px #ADFF00 !important;
+  }
+}
 .sectionOne__informationContainer_links a:last-child {
   color: #FFF;
   font-family: "Jost";
@@ -344,6 +346,13 @@
     font-weight: 600 !important;
   }
 }
+@media (max-width: 440px) {
+  .sectionOne__informationContainer_links a:last-child {
+    font-size: 14px !important;
+    font-weight: 500 !important;
+    border: 1px solid #FFF !important;
+  }
+}
 
 @media (max-width: 1790px) {
   .sectionOne__imgContainer {
@@ -421,7 +430,7 @@
 @media (max-width: 440px) {
   .sectionTwo__formContainer {
     border: none !important;
-    padding: 80px 0 !important;
+    padding: 0 !important;
   }
 }
 
@@ -477,7 +486,7 @@
 }
 @media (max-width: 590px) {
   .form_input {
-    padding: 15px 0 15px 32px !important;
+    padding: 15px 22px !important;
   }
 }
 .form_input::-webkit-input-placeholder {
@@ -582,7 +591,7 @@
   .form_textarea {
     max-width: 300px !important;
     min-width: 300px !important;
-    padding: 15px 32px 15px 32px !important;
+    padding: 15px 22px 20px 22px !important;
   }
 }
 @media (max-width: 465px) {
@@ -684,5 +693,12 @@
   .sectionTwo__formContainer__button {
     font-size: 16px !important;
     font-weight: 600 !important;
+  }
+}
+@media (max-width: 440px) {
+  .sectionTwo__formContainer__button {
+    font-size: 14px !important;
+    font-weight: 500 !important;
+    border: 1px solid #ADFF00 !important;
   }
 }

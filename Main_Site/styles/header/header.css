@@ -286,6 +286,19 @@
   -webkit-transition: 0.2s;
   transition: 0.2s;
 }
+@media (max-width: 1020px) {
+  .button {
+    font-size: 14px !important;
+  }
+}
+@media (max-width: 590px) {
+  .button {
+    padding: 0 !important;
+    overflow: none !important;
+    -webkit-transition: none !important;
+    transition: none !important;
+  }
+}
 
 .button__line {
   position: absolute;
@@ -370,4 +383,33 @@
   transition: 1s;
   -webkit-transition-delay: 0;
           transition-delay: 0;
+}
+
+@media (max-width: 590px) {
+  .button__line {
+    display: none !important;
+  }
+  .button:hover {
+    border-radius: none !important;
+    background-color: transparent !important;
+    color: #FFF !important;
+    -webkit-transition: none !important;
+    transition: none !important;
+    -webkit-transition-delay: none !important;
+            transition-delay: none !important;
+    -webkit-box-shadow: none !important;
+            box-shadow: none !important;
+  }
+  .button__line--top {
+    display: none !important;
+  }
+  .button__line--bottom {
+    display: none !important;
+  }
+  .button__line--left {
+    display: none !important;
+  }
+  .button__line--right {
+    display: none !important;
+  }
 }
