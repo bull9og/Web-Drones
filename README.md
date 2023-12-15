@@ -66,5 +66,3 @@ what can be added or removed there, how to supplement the information, what sect
 In the VK group, you can leave your feedback, as well as contact us :D
 VK - [CROVEX - frontent developers (vk.com)](https://vk.com/crovexwebdev)
 Telegram - [CROVEX](https://t.me/crovex)
-
---------------------------
