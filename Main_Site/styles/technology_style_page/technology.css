@@ -248,7 +248,7 @@
 @media (max-width: 590px) {
   .sectionFour__items_item_titleH3 {
     grid-template-columns: 50px auto !important;
-    padding: 25px 0 !important;
+    padding: 35px 0 !important;
   }
 }
 .sectionFour__items_item_titleH3 .sectionFour__items_item_titleH3_greenSpan {
