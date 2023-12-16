@@ -301,7 +301,7 @@
 
 .sectionFour__items_item_descriptionContainer {
   display: grid;
-  grid-template-columns: 450px 450px;
+  grid-template-columns: 350px 350px;
   -webkit-column-gap: 120px;
      -moz-column-gap: 120px;
           column-gap: 120px;
