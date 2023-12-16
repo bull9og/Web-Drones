@@ -213,8 +213,26 @@
 }
 .sectionFour__items_item_descriptionContainer {
 	display: grid;
-	grid-template-columns: 350px 350px;
-	column-gap: 120px;
+	grid-template-columns: 1fr auto;
+	column-gap: 60px;
+	align-items: center;
+	@media (max-width: 1520px) {
+		grid-template-columns: auto;
+		justify-content: center;
+		.sectionFour__items_item_descriptionContainer_video {
+			margin-bottom: 60px;
+			order: 1;
+		}
+		.sectionFour__items_item_descriptionContainer_descriptions {
+			order: 2;
+		}
+	}
+}
+.sectionFour__items_item_descriptionContainer_descriptions {
+	display: grid;
+	grid-template-columns: 320px 320px;
+	word-wrap: normal;
+	column-gap: 45px;
 	row-gap: 45px;
 	align-items: start;
 	color: #FFF;
@@ -233,8 +251,8 @@
 		justify-content: center !important;
 		align-items: center !important;
 	}
-	.sectionFour__items_item_descriptionContainer_description {
-		.sectionFour__items_item_descriptionContainer_description_titleH5 {
+	.sectionFour__items_item_descriptionContainer_descriptions_description {
+		.sectionFour__items_item_descriptionContainer_descriptions_description_titleH5 {
 			color: #ADFF00;
 			font-family: 'Montserrat';
 			font-size: 22px;
