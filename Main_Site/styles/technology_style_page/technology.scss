@@ -217,14 +217,14 @@
 	column-gap: 60px;
 	align-items: center;
 	@media (max-width: 1520px) {
-		grid-template-columns: auto;
-		justify-content: center;
+		grid-template-columns: auto !important;
+		justify-content: center !important;
 		.sectionFour__items_item_descriptionContainer_video {
-			margin-bottom: 60px;
-			order: 1;
+			margin-bottom: 60px !important;
+			order: 1 !important;
 		}
 		.sectionFour__items_item_descriptionContainer_descriptions {
-			order: 2;
+			order: 2 !important;
 		}
 	}
 }
@@ -262,8 +262,8 @@
 			text-decoration-line: underline;
 			margin-bottom: 25px;
 			@media (max-width: 835px) {
-				font-size: 16px;
-				margin-bottom: 18px;
+				font-size: 16px !important;
+				margin-bottom: 18px !important;
 			}
 		}
 		p {
@@ -281,7 +281,7 @@
 				margin-bottom: 0;
 			}
 			@media (max-width: 835px) {
-				font-size: 14px;
+				font-size: 14px !important;
 			}
 		}
 	}
