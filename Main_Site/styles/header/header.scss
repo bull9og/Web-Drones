@@ -125,6 +125,31 @@
 	@media (max-width: 1020px) {
 		margin-right: 45px !important;
 	}
+	@media (max-width: 765px) {
+		display: flex !important;
+		align-items: center !important;
+		&:nth-child(1)::before {
+			content: url('../../img_source/home-1_svgrepo.com.svg');
+			margin-right: 25px;
+		}
+		&:nth-child(2)::before {
+			content: url('../../img_source/drone-15_svgrepo.com.svg');
+			margin-right: 25px;
+		}
+		&:nth-child(3)::before {
+			content: url('../../img_source/education_svgrepo.com.svg');
+			margin-right: 25px;
+		}
+		&:nth-child(4)::before {
+			content: url('../../img_source/message-square-lines-alt_svgrepo.com.svg');
+			margin-right: 25px;
+		}
+		a {
+			&:hover {
+				color: #FFF !important;
+			}
+		}
+	}
 	a::after {
 		content: '';
 		position: absolute;

@@ -171,6 +171,35 @@
     margin-right: 45px !important;
   }
 }
+@media (max-width: 765px) {
+  .header__MainMenu_link {
+    display: -webkit-box !important;
+    display: -ms-flexbox !important;
+    display: flex !important;
+    -webkit-box-align: center !important;
+        -ms-flex-align: center !important;
+            align-items: center !important;
+  }
+  .header__MainMenu_link:nth-child(1)::before {
+    content: url("../../img_source/home-1_svgrepo.com.svg");
+    margin-right: 25px;
+  }
+  .header__MainMenu_link:nth-child(2)::before {
+    content: url("../../img_source/drone-15_svgrepo.com.svg");
+    margin-right: 25px;
+  }
+  .header__MainMenu_link:nth-child(3)::before {
+    content: url("../../img_source/education_svgrepo.com.svg");
+    margin-right: 25px;
+  }
+  .header__MainMenu_link:nth-child(4)::before {
+    content: url("../../img_source/message-square-lines-alt_svgrepo.com.svg");
+    margin-right: 25px;
+  }
+  .header__MainMenu_link a:hover {
+    color: #FFF !important;
+  }
+}
 .header__MainMenu_link a::after {
   content: "";
   position: absolute;
