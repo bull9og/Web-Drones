@@ -32,6 +32,9 @@
 	@media (max-width: 590px) {
 		padding: 40px 30px !important;
 	}
+	@media (max-height: 550px) {
+		padding: 10px 30px !important;
+	}
 }
 .header__menuBurger {
 	display: none;
@@ -102,6 +105,15 @@
 			padding-left: 45px !important;
 			padding-top: 150px !important;
 			backdrop-filter: blur(10px) !important;
+			@media (max-height: 550px) {
+				padding-top: 100px !important;
+			}
+			@media (max-height: 330px) {
+				display: grid !important;
+				grid-template-columns: 200px 200px !important;
+				grid-template-rows: 60px 60px !important;
+				padding-top: 120px !important;
+			}
 			.header__MainMenu_link {
 				margin: 0 !important;
 				margin-bottom: 30px !important;
