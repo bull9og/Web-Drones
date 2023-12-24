@@ -12,6 +12,9 @@
 		<script src="../javascript/animationShow.js" defer></script>
 		<script src="../javascript/spoiler.js" defer></script>
 		<script src="../javascript/pointer.js" defer></script>
+		<script src="keys.jswww" defer></script>
+		<script src="zoom.js" defer></script>
+		<script src="click.js" defer></script>
 		<title>WEB-DRONES / Приложение /</title>
 		<meta name="yandex-verification" content="02b74c1d5b658e25" />
 		<meta name="description" content="Веб-приложение, которое помогает вам управлять дроном со своего компьютера и ноутбука, через wi-fi и прочие методы связи!">
@@ -30,8 +33,63 @@
 
 </head>
 <body>
+	<div class="cursor">
+		<div class="cursor-outer"></div>
+		<div class="cursor-inner"></div>
+	</div>
+	<video autoplay loop class="video" id="video" src="../img_source/video/istockphoto-1795525553-640_adpp_is.mp4" controls></video>
 	<main class="main">
-		
+		<div class="container">
+			<div class="main__controlsContainer">
+				<button data-shrink class="main__controlsContainer__button_clue">
+					<svg width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M12.1872 5.32123C11.1954 5.28308 10.2609 5.62638 9.53613 6.31299C8.81138 6.9996 8.42993 7.91507 8.42993 8.90684H9.89851C9.89851 8.3156 10.1274 7.78157 10.566 7.36197C10.9856 6.96145 11.5387 6.75166 12.13 6.77073C13.2171 6.82795 14.0944 7.70528 14.1517 8.79241C14.2089 9.93675 13.0645 10.9857 12.5686 11.3863L11.1001 12.6832V14.1518H12.5686V13.3507L13.5032 12.5306C14.3233 11.8631 15.6965 10.4708 15.6202 8.73519C15.5249 6.90424 14.0182 5.39751 12.1872 5.32123Z" fill="#D9D9D9"/>
+						<path d="M12.5687 15.6968H11.1001V17.2226H12.5687V15.6968Z" fill="#D9D9D9"/>
+						<path d="M0 19.0312C0 21.7927 2.23858 24.0312 5 24.0312H19.0312C21.7927 24.0312 24.0312 21.7927 24.0312 19.0312V5C24.0312 2.23858 21.7927 0 19.0312 0H5C2.23858 0 0 2.23858 0 5V19.0312ZM1.52579 6.52579C1.52579 3.76437 3.76437 1.52579 6.52579 1.52579H17.5055C20.2669 1.52579 22.5055 3.76437 22.5055 6.52579V17.5055C22.5055 20.2669 20.2669 22.5055 17.5055 22.5055H6.52579C3.76437 22.5055 1.52579 20.2669 1.52579 17.5055V6.52579Z" fill="#D9D9D9"/>
+					</svg>
+				</button>
+				<div class="main__controlsContainer__button_clue_info">
+					<img src="img/PRILOZHENIE MOBILE FAQ (1).png" alt="">
+				</div>
+				<div class="main__controlsContainer__button">
+					<button id="up" data-shrink class="main__controlsContainer__button_LeftBtn">
+						<svg style="rotate: 90deg;" width="9" height="16" viewBox="0 0 9 16" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M0.292893 7.29289C-0.097631 7.68342 -0.0976309 8.31658 0.292893 8.70711L6.65685 15.0711C7.04738 15.4616 7.68054 15.4616 8.07107 15.0711C8.46159 14.6805 8.46159 14.0474 8.07107 13.6569L2.41421 8L8.07107 2.34315C8.46159 1.95262 8.46159 1.31946 8.07107 0.928932C7.68054 0.538407 7.04738 0.538407 6.65685 0.928932L0.292893 7.29289ZM2 7L1 7L1 9L2 9L2 7Z" fill="#D9D9D9"/>
+						</svg>
+					</button>
+					<button data-shrink class="main__controlsContainer__button_LeftBtn">
+						<svg style="rotate: 0deg;" width="9" height="16" viewBox="0 0 9 16" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M0.292893 7.29289C-0.097631 7.68342 -0.0976309 8.31658 0.292893 8.70711L6.65685 15.0711C7.04738 15.4616 7.68054 15.4616 8.07107 15.0711C8.46159 14.6805 8.46159 14.0474 8.07107 13.6569L2.41421 8L8.07107 2.34315C8.46159 1.95262 8.46159 1.31946 8.07107 0.928932C7.68054 0.538407 7.04738 0.538407 6.65685 0.928932L0.292893 7.29289ZM2 7L1 7L1 9L2 9L2 7Z" fill="#D9D9D9"/>
+						</svg>
+					</button>
+					<button data-shrink class="main__controlsContainer__button_LeftBtn">
+						<svg style="rotate: -180deg;" width="9" height="16" viewBox="0 0 9 16" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M0.292893 7.29289C-0.097631 7.68342 -0.0976309 8.31658 0.292893 8.70711L6.65685 15.0711C7.04738 15.4616 7.68054 15.4616 8.07107 15.0711C8.46159 14.6805 8.46159 14.0474 8.07107 13.6569L2.41421 8L8.07107 2.34315C8.46159 1.95262 8.46159 1.31946 8.07107 0.928932C7.68054 0.538407 7.04738 0.538407 6.65685 0.928932L0.292893 7.29289ZM2 7L1 7L1 9L2 9L2 7Z" fill="#D9D9D9"/>
+						</svg>
+					</button>
+					<button style="rotate: -90deg;" data-shrink class="main__controlsContainer__button_LeftBtn">
+						<svg width="9" height="16" viewBox="0 0 9 16" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M0.292893 7.29289C-0.097631 7.68342 -0.0976309 8.31658 0.292893 8.70711L6.65685 15.0711C7.04738 15.4616 7.68054 15.4616 8.07107 15.0711C8.46159 14.6805 8.46159 14.0474 8.07107 13.6569L2.41421 8L8.07107 2.34315C8.46159 1.95262 8.46159 1.31946 8.07107 0.928932C7.68054 0.538407 7.04738 0.538407 6.65685 0.928932L0.292893 7.29289ZM2 7L1 7L1 9L2 9L2 7Z" fill="#D9D9D9"/>
+						</svg>
+					</button>
+				</div>
+			</div>
+			<div class="main__controlsContainer">
+				<div class="main__controlsContainer__button">
+					<button data-shrink class="main__controlsContainer__button_RighttBtn">
+
+					</button>
+					<button data-shrink class="main__controlsContainer__button_RightBtn">
+						
+					</button>
+					<button data-shrink class="main__controlsContainer__button_RightBtn">
+						
+					</button>
+					<button data-shrink class="main__controlsContainer__button_RightBtn">
+						
+					</button>
+				</div>
+				<div class="zoom-container">
+					<input id="zoom" type="range" min="1" max="5" value="1" step="0.1" oninput="updateZoom(this.value)">
+					
+				</div>
+			</div>
+		</div>
 	</main>
 </body>
 </html>

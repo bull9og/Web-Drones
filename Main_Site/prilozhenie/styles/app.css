@@ -1,0 +1,148 @@
+@import "../../styles/obnulenie.css";
+@import "../../styles/global_style_CSS/globalStyle.css";
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;900&family=Roboto&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Jost:wght@400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Rubik:wght@800;900&display=swap");
+.main {
+  width: 100vw;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.main__controlsContainer:nth-child(1) {
+  padding: 25px 0 25px 25px;
+}
+.main__controlsContainer:nth-child(2) {
+  padding: 25px 25px 25px 0;
+}
+
+.main__controlsContainer__button_clue {
+  position: fixed;
+  left: 25px;
+  top: 25px;
+  background: transparent;
+  -webkit-transition: all 200ms;
+  transition: all 200ms;
+  z-index: 100;
+}
+.main__controlsContainer__button_clue.click {
+  -webkit-transition: all 200ms;
+  transition: all 200ms;
+}
+.main__controlsContainer__button_clue.click svg path {
+  fill: #ADFF00;
+}
+
+.main__controlsContainer__button_clue_info {
+  display: none;
+}
+.main__controlsContainer__button_clue_info.click {
+  display: block;
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-index: 99;
+}
+.main__controlsContainer__button_clue_info.click img {
+  width: 100vw;
+  height: 100%;
+}
+
+.main__controlsContainer__button {
+  display: grid;
+  grid-template-rows: 1fr 1fr 1fr;
+  grid-template-columns: auto auto;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: start;
+  position: fixed;
+  left: 45px;
+  bottom: 45px;
+}
+.main__controlsContainer__button .main__controlsContainer__button_LeftBtn {
+  width: 52px;
+  height: 52px;
+  margin: -3px;
+  background: transparent;
+  border: 1px solid #D9D9D9;
+  border-radius: 100%;
+  position: relative;
+  -webkit-transition: all 200ms;
+  transition: all 200ms;
+}
+.main__controlsContainer__button .main__controlsContainer__button_LeftBtn:active {
+  background: #D9D9D9;
+  -webkit-transition: all 200ms;
+  transition: all 200ms;
+}
+.main__controlsContainer__button .main__controlsContainer__button_LeftBtn:active svg path {
+  fill: #1e1e1e;
+}
+.main__controlsContainer__button .main__controlsContainer__button_LeftBtn:nth-child(1) {
+  grid-column: 2/3;
+  grid-row: 1/2;
+}
+.main__controlsContainer__button .main__controlsContainer__button_LeftBtn:nth-child(1) svg {
+  position: absolute;
+  left: 42%;
+  top: 32%;
+}
+.main__controlsContainer__button .main__controlsContainer__button_LeftBtn:nth-child(2) {
+  grid-column: 1/2;
+  grid-row: 2/3;
+}
+.main__controlsContainer__button .main__controlsContainer__button_LeftBtn:nth-child(2) svg {
+  position: absolute;
+  left: 40%;
+  top: 33%;
+}
+.main__controlsContainer__button .main__controlsContainer__button_LeftBtn:nth-child(3) {
+  grid-column: 3/4;
+  grid-row: 2/3;
+}
+.main__controlsContainer__button .main__controlsContainer__button_LeftBtn:nth-child(3) svg {
+  position: absolute;
+  left: 40%;
+  top: 33%;
+}
+.main__controlsContainer__button .main__controlsContainer__button_LeftBtn:nth-child(4) {
+  grid-column: 2/3;
+  grid-row: 3/4;
+}
+.main__controlsContainer__button .main__controlsContainer__button_LeftBtn:nth-child(4) svg {
+  position: absolute;
+  left: 42%;
+  top: 33%;
+}
+
+video {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100vw;
+  height: 100%;
+  z-index: -1;
+}
+video .click {
+  -webkit-filter: blur(0.1);
+          filter: blur(0.1);
+}
+
+.zoom-container {
+  position: fixed;
+  right: -10px;
+  top: 60%;
+  z-index: 10;
+  rotate: -90deg;
+  width: 0;
+}
+.zoom-container #zoom-value {
+  font-size: 24px;
+  font-weight: bold;
+}
