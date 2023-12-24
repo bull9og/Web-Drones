@@ -67,6 +67,12 @@
     opacity: 100%;
   }
 }
+@media (max-width: 1920px) {
+  .sectionOne__information_img {
+    max-width: 75% !important;
+    padding: 90px 0 !important;
+  }
+}
 @media (max-width: 1850px) {
   .sectionOne__information_img {
     max-width: 65% !important;
