@@ -46,12 +46,12 @@
 	&.click {
 		display: block;
 		position: fixed;
-		left: 0;
-		top: 0;
+		left: 5vw;
+		top: 15%;
 		z-index: 99;
 		img {
-			width: 100vw;
-			height: 100%;
+			width: 80vw;
+			height: auto;
 		}
 	}
 }
