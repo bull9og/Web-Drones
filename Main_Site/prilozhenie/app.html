@@ -1,95 +1,71 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
 	
-
 	<head>
 		<meta charset="UTF-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<link rel="stylesheet" href="styles/app.css">
 		<script src="../javascript/jquery-3.7.1.min.js" defer></script>
-		<script src="https://cdnjs.cloudflare.com/ajax/libs/smoothscroll/1.4.10/SmoothScroll.min.js" defer></script>
-		<script src="../javascript/animationShow.js" defer></script>
 		<script src="../javascript/spoiler.js" defer></script>
-		<script src="../javascript/pointer.js" defer></script>
-		<script src="keys.jswww" defer></script>
-		<script src="zoom.js" defer></script>
+		<script src="keys.js" defer></script>
 		<script src="click.js" defer></script>
+		<script src="app.js" defer></script>
 		<title>WEB-DRONES / Приложение /</title>
-		<meta name="yandex-verification" content="02b74c1d5b658e25" />
+		<meta name="yandex-verification" content="02b74c1d5b658e25"/>
 		<meta name="description" content="Веб-приложение, которое помогает вам управлять дроном со своего компьютера и ноутбука, через wi-fi и прочие методы связи!">
 		<meta name="keywords" content="Crovex website developers, CROVEX, crovex web dev, кровекс, веб разработка кровекс, веб дизайн кровекс, crovex, web-drones, web drones, webdrones, crovex web drones, управление дронами, полет на дроне, дроны, обучение дронов, обучение и полет на дронах, летать на дронах, веб дроны, полет дронами, веб дроны">
-		<link rel="apple-touch-icon" sizes="180x180" href="img_source/favicon/apple-touch-icon.png">
-		<link rel="icon" type="image/png" sizes="32x32" href="img_source/favicon/favicon-32x32.png">
-		<link rel="icon" type="image/png" sizes="16x16" href="img_source/favicon/favicon-16x16.png">
-		<link rel="manifest" href="img_source/favicon/site.webmanifest">
-		<link rel="mask-icon" href="img_source/favicon/safari-pinned-tab.svg" color="#1e1e1e">
+		<link rel="apple-touch-icon" sizes="180x180" href="../img_source/favicon/apple-touch-icon.png">
+		<link rel="icon" type="image/png" sizes="32x32" href="../img_source/favicon/favicon-32x32.png">
+		<link rel="icon" type="image/png" sizes="16x16" href="../img_source/favicon/favicon-16x16.png">
+		<link rel="manifest" href="../img_source/favicon/site.webmanifest">
+		<link rel="mask-icon" href="../img_source/favicon/safari-pinned-tab.svg" color="#1e1e1e">
 		<meta name="msapplication-TileColor" content="#1e1e1e">
-		<meta name="msapplication-TileImage" content="img_source/favicon/mstile-144x144.png">
+		<meta name="msapplication-TileImage" content="../img_source/favicon/mstile-144x144.png">
 		<meta name="theme-color" content="#000000">
 		<meta property="og:locale" content="ru">
 	</head>
 
-
-</head>
 <body>
-	<!-- <div class="cursor">
-		<div class="cursor-outer"></div>
-		<div class="cursor-inner"></div>
-	</div>  -->
-	<video autoplay loop class="video" id="video" src="../img_source/video/istockphoto-1795525553-640_adpp_is.mp4" controls></video>
-	<main class="main">
-		<div class="container">
-			<div class="main__controlsContainer">
-				<button data-shrink class="main__controlsContainer__button_clue">
-					<svg width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M12.1872 5.32123C11.1954 5.28308 10.2609 5.62638 9.53613 6.31299C8.81138 6.9996 8.42993 7.91507 8.42993 8.90684H9.89851C9.89851 8.3156 10.1274 7.78157 10.566 7.36197C10.9856 6.96145 11.5387 6.75166 12.13 6.77073C13.2171 6.82795 14.0944 7.70528 14.1517 8.79241C14.2089 9.93675 13.0645 10.9857 12.5686 11.3863L11.1001 12.6832V14.1518H12.5686V13.3507L13.5032 12.5306C14.3233 11.8631 15.6965 10.4708 15.6202 8.73519C15.5249 6.90424 14.0182 5.39751 12.1872 5.32123Z" fill="#D9D9D9"/>
-						<path d="M12.5687 15.6968H11.1001V17.2226H12.5687V15.6968Z" fill="#D9D9D9"/>
-						<path d="M0 19.0312C0 21.7927 2.23858 24.0312 5 24.0312H19.0312C21.7927 24.0312 24.0312 21.7927 24.0312 19.0312V5C24.0312 2.23858 21.7927 0 19.0312 0H5C2.23858 0 0 2.23858 0 5V19.0312ZM1.52579 6.52579C1.52579 3.76437 3.76437 1.52579 6.52579 1.52579H17.5055C20.2669 1.52579 22.5055 3.76437 22.5055 6.52579V17.5055C22.5055 20.2669 20.2669 22.5055 17.5055 22.5055H6.52579C3.76437 22.5055 1.52579 20.2669 1.52579 17.5055V6.52579Z" fill="#D9D9D9"/>
-					</svg>
-				</button>
-				<div class="main__controlsContainer__button_clue_info">
-					<img src="img/FAQ.png" alt="FAQ content">
-				</div>
-				<div class="main__controlsContainer__button">
-					<button id="up" data-shrink class="main__controlsContainer__button_LeftBtn">
-						<svg style="rotate: 90deg;" width="9" height="16" viewBox="0 0 9 16" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M0.292893 7.29289C-0.097631 7.68342 -0.0976309 8.31658 0.292893 8.70711L6.65685 15.0711C7.04738 15.4616 7.68054 15.4616 8.07107 15.0711C8.46159 14.6805 8.46159 14.0474 8.07107 13.6569L2.41421 8L8.07107 2.34315C8.46159 1.95262 8.46159 1.31946 8.07107 0.928932C7.68054 0.538407 7.04738 0.538407 6.65685 0.928932L0.292893 7.29289ZM2 7L1 7L1 9L2 9L2 7Z" fill="#D9D9D9"/>
-						</svg>
-					</button>
-					<button data-shrink class="main__controlsContainer__button_LeftBtn">
-						<svg style="rotate: 0deg;" width="9" height="16" viewBox="0 0 9 16" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M0.292893 7.29289C-0.097631 7.68342 -0.0976309 8.31658 0.292893 8.70711L6.65685 15.0711C7.04738 15.4616 7.68054 15.4616 8.07107 15.0711C8.46159 14.6805 8.46159 14.0474 8.07107 13.6569L2.41421 8L8.07107 2.34315C8.46159 1.95262 8.46159 1.31946 8.07107 0.928932C7.68054 0.538407 7.04738 0.538407 6.65685 0.928932L0.292893 7.29289ZM2 7L1 7L1 9L2 9L2 7Z" fill="#D9D9D9"/>
-						</svg>
-					</button>
-					<button data-shrink class="main__controlsContainer__button_LeftBtn">
-						<svg style="rotate: -180deg;" width="9" height="16" viewBox="0 0 9 16" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M0.292893 7.29289C-0.097631 7.68342 -0.0976309 8.31658 0.292893 8.70711L6.65685 15.0711C7.04738 15.4616 7.68054 15.4616 8.07107 15.0711C8.46159 14.6805 8.46159 14.0474 8.07107 13.6569L2.41421 8L8.07107 2.34315C8.46159 1.95262 8.46159 1.31946 8.07107 0.928932C7.68054 0.538407 7.04738 0.538407 6.65685 0.928932L0.292893 7.29289ZM2 7L1 7L1 9L2 9L2 7Z" fill="#D9D9D9"/>
-						</svg>
-					</button>
-					<button style="rotate: -90deg;" data-shrink class="main__controlsContainer__button_LeftBtn">
-						<svg width="9" height="16" viewBox="0 0 9 16" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M0.292893 7.29289C-0.097631 7.68342 -0.0976309 8.31658 0.292893 8.70711L6.65685 15.0711C7.04738 15.4616 7.68054 15.4616 8.07107 15.0711C8.46159 14.6805 8.46159 14.0474 8.07107 13.6569L2.41421 8L8.07107 2.34315C8.46159 1.95262 8.46159 1.31946 8.07107 0.928932C7.68054 0.538407 7.04738 0.538407 6.65685 0.928932L0.292893 7.29289ZM2 7L1 7L1 9L2 9L2 7Z" fill="#D9D9D9"/>
-						</svg>
-					</button>
-				</div>
+	
+	<div class="appContainer">
+		<div class="appContainer_FAQ">
+			<div class="appContainer__FAQimg">
+				<svg width="25" height="25" viewBox="0 0 17 17" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+					<path d="M8.62132 3.76423C7.91973 3.73725 7.25862 3.98011 6.74592 4.46582C6.23322 4.95154 5.96338 5.59916 5.96338 6.30074H7.00227C7.00227 5.88249 7.16417 5.50471 7.47449 5.20788C7.77132 4.92455 8.16258 4.77614 8.58084 4.78963C9.34989 4.83011 9.97052 5.45074 10.011 6.21979C10.0515 7.02931 9.24195 7.77138 8.89116 8.05471L7.85227 8.97217V10.0111H8.89116V9.44439L9.55227 8.86423C10.1324 8.39201 11.1039 7.40709 11.0499 6.17931C10.9824 4.88408 9.91655 3.8182 8.62132 3.76423Z"/>
+					<path d="M8.89118 11.104H7.85229V12.1834H8.89118V11.104Z"/>
+					<path d="M0 12C0 14.7614 2.23858 17 5 17H12C14.7614 17 17 14.7614 17 12V5C17 2.23858 14.7614 0 12 0H5C2.23858 0 0 2.23858 0 5V12ZM1.07937 6.07936C1.07937 3.31794 3.31794 1.07937 6.07936 1.07937H10.9206C13.6821 1.07937 15.9206 3.31794 15.9206 6.07936V10.9206C15.9206 13.6821 13.6821 15.9206 10.9206 15.9206H6.07936C3.31794 15.9206 1.07937 13.6821 1.07937 10.9206V6.07936Z"/>
+				</svg>
 			</div>
-			<div class="main__controlsContainer">
-				<div class="main__controlsContainer__button">
-					<button data-shrink class="main__controlsContainer__button_RighttBtn">
-
-					</button>
-					<button data-shrink class="main__controlsContainer__button_RightBtn">
-						
-					</button>
-					<button data-shrink class="main__controlsContainer__button_RightBtn">
-						
-					</button>
-					<button data-shrink class="main__controlsContainer__button_RightBtn">
-						
-					</button>
-				</div>
-				<div class="zoom-container">
-					<input id="zoom" type="range" min="1" max="5" value="1" step="0.1" oninput="updateZoom(this.value)">
-					
-				</div>
-			</div>
+			<img class="test" src="img/PRILOZHENIE MOBILE FAQ (1).png" alt="">
 		</div>
-	</main>
+		<div class="keyLeftContainer">
+			<svg id="keyW" style="rotate: -180deg;" width="52" height="52" viewBox="0 0 52 52" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+				<g opacity="0.5">
+				<circle cx="26" cy="26" r="25.5" stroke="currentColor"/>
+				<path id="arrow" d="M25.2929 30.7071C25.6834 31.0976 26.3166 31.0976 26.7071 30.7071L33.0711 24.3431C33.4616 23.9526 33.4616 23.3195 33.0711 22.9289C32.6805 22.5384 32.0474 22.5384 31.6569 22.9289L26 28.5858L20.3431 22.9289C19.9526 22.5384 19.3195 22.5384 18.9289 22.9289C18.5384 23.3195 18.5384 23.9526 18.9289 24.3431L25.2929 30.7071ZM25 29L25 30L27 30L27 29L25 29Z" fill="currentColor"/>
+				</g>
+			</svg>
+			<svg id="keyA" style="rotate: 90deg;" width="52" height="52" viewBox="0 0 52 52" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+				<g opacity="0.5">
+					<circle cx="26" cy="26" r="25.5" stroke="currentColor"/>
+					<path id="arrow2" d="M25.2929 30.7071C25.6834 31.0976 26.3166 31.0976 26.7071 30.7071L33.0711 24.3431C33.4616 23.9526 33.4616 23.3195 33.0711 22.9289C32.6805 22.5384 32.0474 22.5384 31.6569 22.9289L26 28.5858L20.3431 22.9289C19.9526 22.5384 19.3195 22.5384 18.9289 22.9289C18.5384 23.3195 18.5384 23.9526 18.9289 24.3431L25.2929 30.7071ZM25 29L25 30L27 30L27 29L25 29Z" fill="currentColor"/>
+				</g>
+			</svg>
+			<svg id="keyS" style="rotate: 0deg;" width="52" height="52" viewBox="0 0 52 52" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+				<g opacity="0.5">
+					<circle cx="26" cy="26" r="25.5" stroke="currentColor"/>
+					<path id="arrow3" d="M25.2929 30.7071C25.6834 31.0976 26.3166 31.0976 26.7071 30.7071L33.0711 24.3431C33.4616 23.9526 33.4616 23.3195 33.0711 22.9289C32.6805 22.5384 32.0474 22.5384 31.6569 22.9289L26 28.5858L20.3431 22.9289C19.9526 22.5384 19.3195 22.5384 18.9289 22.9289C18.5384 23.3195 18.5384 23.9526 18.9289 24.3431L25.2929 30.7071ZM25 29L25 30L27 30L27 29L25 29Z" fill="currentColor"/>
+				</g>
+			</svg>
+			<svg id="keyD" style="rotate: -90deg;" width="52" height="52" viewBox="0 0 52 52" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+				<g opacity="0.5">
+					<circle cx="26" cy="26" r="25.5" stroke="currentColor"/>
+					<path id="arrow4" d="M25.2929 30.7071C25.6834 31.0976 26.3166 31.0976 26.7071 30.7071L33.0711 24.3431C33.4616 23.9526 33.4616 23.3195 33.0711 22.9289C32.6805 22.5384 32.0474 22.5384 31.6569 22.9289L26 28.5858L20.3431 22.9289C19.9526 22.5384 19.3195 22.5384 18.9289 22.9289C18.5384 23.3195 18.5384 23.9526 18.9289 24.3431L25.2929 30.7071ZM25 29L25 30L27 30L27 29L25 29Z" fill="currentColor"/>
+				</g>
+			</svg>
+		</div>
+	</div>
+
 </body>
 </html>
