@@ -50,10 +50,10 @@ io.on('connection', function(socket) {
       case 'z':
         client.land();
         break;
-	  case 'r':
+	  case 'shift':
 		client.up(0.5);
 		break;
-	  case 'f':
+	  case 'ctrl':
 		client.down(0.5);
 		break;
 	  case 'q':
@@ -78,3 +78,44 @@ io.on('connection', function(socket) {
 http.listen(3000, function() {
   console.log('Сервер запущен на порту 3000');
 });
+
+// Инициализация карты
+let map;
+let droneMarker;
+
+function initMap() {
+    map = new google.maps.Map(document.getElementById('map'), {
+        center: { lat: 55.7558, lng: 37.6173 },
+        zoom: 15,
+        mapTypeId: 'atellite'
+    });
+
+    // Создаем маркер для дрона
+    droneMarker = new google.maps.Marker({
+        position: { lat: 55.7558, lng: 37.6173 },
+        map: map,
+        title: 'Дрон'
+    });
+
+    // Обновляем координаты дрона каждую секунду
+    setInterval(updateDroneCoordinates, 1000);
+}
+
+// Обновляем координаты дрона
+function updateDroneCoordinates() {
+    // Генерируем случайные координаты для примера
+    let latitude = 55.7558 + Math.random() * 0.01 - 0.005;
+    let longitude = 37.6173 + Math.random() * 0.01 - 0.005;
+    let altitude = Math.random() * 100;
+
+    // Обновляем маркер на карте
+    droneMarker.setPosition({ lat: latitude, lng: longitude });
+
+    // Обновляем текст с координатами
+    document.getElementById('latitude').innerText = latitude.toFixed(4);
+    document.getElementById('longitude').innerText = longitude.toFixed(4);
+    document.getElementById('altitude').innerText = altitude.toFixed(0);
+}
+
+// Инициализируем карту при загрузке страницы
+google.maps.event.addDomListener(window, 'load', initMap);
