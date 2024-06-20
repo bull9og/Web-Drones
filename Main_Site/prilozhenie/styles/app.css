@@ -16,6 +16,11 @@ body {
   height: 100vh;
   position: relative;
 }
+@media (max-width: 800px) {
+  .appContainer {
+    padding: 10px !important;
+  }
+}
 .appContainer .appContainer__FAQimg {
   position: absolute;
   right: 50px;
@@ -29,6 +34,11 @@ body {
   color: #ADFF00;
   opacity: 1;
 }
+@media (min-width: 1700px) {
+  .appContainer .appContainer__FAQimg {
+    left: 25px !important;
+  }
+}
 .appContainer .test {
   display: none;
   width: 90vw;
@@ -40,7 +50,7 @@ body {
       -ms-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
   padding: 0 25px;
-  z-index: 10;
+  z-index: 140;
 }
 .appContainer.darkScreen {
   -webkit-transition: 0.4s;
@@ -59,6 +69,17 @@ body {
   grid-template-columns: repeat(3, 52px);
   grid-template-rows: repeat(3, 52px);
 }
+@media (max-width: 800px) {
+  .keyLeftContainer {
+    left: 10px !important;
+    bottom: 10px !important;
+  }
+}
+@media (min-width: 1700px) {
+  .keyLeftContainer {
+    display: none !important;
+  }
+}
 
 .keyRightContainer {
   position: absolute;
@@ -67,6 +88,17 @@ body {
   display: grid;
   grid-template-columns: repeat(3, 52px);
   grid-template-rows: repeat(3, 52px);
+}
+@media (max-width: 800px) {
+  .keyRightContainer {
+    right: 10px !important;
+    bottom: 10px !important;
+  }
+}
+@media (min-width: 1700px) {
+  .keyRightContainer {
+    display: none !important;
+  }
 }
 
 #keyW {
@@ -217,24 +249,46 @@ body {
   position: absolute;
   left: 25px;
   top: 0;
-  width: 600px;
-  height: 300px;
-  margin: 40px auto;
+  max-width: 600px;
+  max-height: 300px;
+  margin: 25px auto;
   border: 1px solid #ddd;
-  border-radius: 10px;
+  border-radius: 55px;
   padding: 20px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
   overflow: hidden;
-  z-index: -2;
+}
+@media (max-width: 1441px) {
+  .map-container {
+    max-width: 450px !important;
+    max-height: 250px !important;
+    border-radius: 25px !important;
+  }
+}
+@media (max-width: 800px) {
+  .map-container {
+    max-width: 340px !important;
+    max-height: 200px !important;
+    left: 10px !important;
+    margin: 10px auto !important;
+  }
+}
+@media (max-height: 450px) {
+  .map-container {
+    max-width: 290px !important;
+    max-height: 150px !important;
+  }
+}
+@media (max-height: 321px) {
+  .map-container {
+    max-width: 220px !important;
+    max-height: 120px !important;
+  }
+}
+@media (min-width: 1700px) {
+  .map-container {
+    right: -64% !important;
+    top: 0 !important;
+  }
 }
 
 #map {
@@ -261,7 +315,6 @@ iframe {
       -ms-flex-align: center;
           align-items: center;
   gap: 125px;
-  margin-top: 20px;
   font-size: 18px;
   color: #fff;
   left: 40%;
@@ -269,9 +322,65 @@ iframe {
   top: 25px;
   z-index: -1;
 }
+@media (min-width: 1700px) {
+  .drone-coordinates {
+    left: 25px !important;
+    top: 86% !important;
+    display: block !important;
+  }
+}
+@media (max-width: 1441px) {
+  .drone-coordinates {
+    font-size: 12px !important;
+    gap: 100px !important;
+    left: 45% !important;
+  }
+}
+@media (max-width: 1241px) {
+  .drone-coordinates {
+    left: 45% !important;
+    display: block !important;
+  }
+}
+@media (max-width: 1075px) {
+  .drone-coordinates {
+    left: 50% !important;
+  }
+}
+@media (max-width: 963px) {
+  .drone-coordinates {
+    left: 55% !important;
+  }
+}
+@media (max-width: 881px) {
+  .drone-coordinates {
+    left: 60% !important;
+  }
+}
+@media (max-width: 800px) {
+  .drone-coordinates {
+    left: 50% !important;
+    top: 10px !important;
+  }
+}
+@media (max-width: 620px) {
+  .drone-coordinates {
+    left: 55% !important;
+  }
+}
+@media (max-width: 560px) {
+  .drone-coordinates {
+    left: 60% !important;
+  }
+}
+@media (max-height: 321px) {
+  .drone-coordinates {
+    left: 40% !important;
+  }
+}
 
 .drone-coordinates p {
-  margin-bottom: 10px;
+  margin-bottom: 15px;
 }
 
 .drone-coordinates span {
